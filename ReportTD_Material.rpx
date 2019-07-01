@@ -1,0 +1,446 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<ActiveReportsLayout 
+	GUIDLIB="{F739CB11-C56B-4651-8D92-D972BE7E5909}" GUIDREP="{3841C9CF-C31D-4DBD-89EA-59C7B4D3F397}" 
+	LICENSE="100001003B7FD2001B26564594C48DAC4C674BED30006400790033007400680078006900750069006F0071007200340035003200660068006700640072003400
+		740066000000"
+	PrintWidth="9480"
+	DocumentName="ActiveReports Document"
+	ScriptLang="VBScript"
+>
+<Watermark
+		>
+</Watermark>
+<PageSettings	PaperSize="9"
+	PaperWidth="11908"
+	PaperHeight="16840"
+	Orientation="1"
+>
+</PageSettings>
+<StyleSheet>
+	<Style Name="Normal"
+	Value="font-family: Arial; font-style: normal; font-variant: inherit; font-weight: normal; font-size: 10pt; font-size-adjust: inherit; font-stretch: inherit; color: rgb(0,0,0); background-color: rgb(255,255,255); background-image: inherit; background-repeat: inherit; background-attachment: inherit; background-x-position: inherit; background-y-position: inherit; opacity: inherit; word-spacing: inherit; letter-spacing: inherit; text-decoration: none; vertical-align: inherit; text-transform: inherit; text-align: inherit; text-indent: inherit; unicode-bidi: inherit; line-height: inherit; white-space: inherit; ddo-can-grow: inherit; ddo-can-shrink: inherit; ddo-char-set: 0; "
+	/>
+	<Style Name="Heading1"
+	Value="font-family: inherit; font-style: inherit; font-variant: inherit; font-weight: bold; font-size: 16pt; font-size-adjust: inherit; font-stretch: inherit; "
+	/>
+	<Style Name="Heading2"
+	Value="font-family: Times New Roman; font-style: italic; font-variant: inherit; font-weight: bold; font-size: 14pt; font-size-adjust: inherit; font-stretch: inherit; "
+	/>
+	<Style Name="Heading3"
+	Value="font-family: inherit; font-style: inherit; font-variant: inherit; font-weight: bold; font-size: 13pt; font-size-adjust: inherit; font-stretch: inherit; "
+	/>
+	<Style Name="Heading4"
+	/>
+</StyleSheet>
+<Sections>
+	<Section Type="PageHeader" Name="PageHeader"
+		Height="5190"
+	>
+		<Control 
+		Type="AR.Label"
+		Name="Label13"
+		Left="6803"
+		Top="850"
+		Width="2268"
+		Height="284"
+		Caption="結晶課"
+		ClassName="Normal"
+		Style="text-align: center; vertical-align: middle; font-family: ＭＳ Ｐゴシック; font-size: 12pt; "
+		>
+		</Control>
+		<Control 
+		Type="AR.Label"
+		Name="Label1"
+		Left="1701"
+		Top="142"
+		Width="4110"
+		Height="425"
+		Caption="TD破砕素材入庫兼出庫伝票"
+		HyperLink="ÿ"
+		ClassName="Normal"
+		Style="font-family: ＭＳ Ｐゴシック; font-weight: bold; font-size: 16pt; "
+		>
+		</Control>
+		<Control 
+		Type="AR.Label"
+		Name="Label2"
+		Left="567"
+		Top="1134"
+		Width="1701"
+		Height="283"
+		Caption="倉庫番号"
+		ClassName="Normal"
+		Style="font-family: ＭＳ Ｐゴシック; font-weight: bold; font-size: 12pt; "
+		>
+		</Control>
+		<Control 
+		Type="AR.Label"
+		Name="Label3"
+		Left="567"
+		Top="1984"
+		Width="1701"
+		Height="284"
+		Caption="工場区分"
+		ClassName="Normal"
+		Style="font-family: ＭＳ Ｐゴシック; font-weight: bold; font-size: 12pt; "
+		>
+		</Control>
+		<Control 
+		Type="AR.Label"
+		Name="Label4"
+		Left="567"
+		Top="2835"
+		Width="1701"
+		Height="283"
+		Caption="客先"
+		ClassName="Normal"
+		Style="font-family: ＭＳ Ｐゴシック; font-weight: bold; font-size: 12pt; "
+		>
+		</Control>
+		<Control 
+		Type="AR.Label"
+		Name="Label5"
+		Left="567"
+		Top="3685"
+		Width="1701"
+		Height="284"
+		Caption="客先コード"
+		ClassName="Normal"
+		Style="font-family: ＭＳ Ｐゴシック; font-weight: bold; font-size: 12pt; "
+		>
+		</Control>
+		<Control 
+		Type="AR.Label"
+		Name="Label6"
+		Left="567"
+		Top="4677"
+		Width="1701"
+		Height="284"
+		Caption="伝票No."
+		ClassName="Normal"
+		Style="font-family: ＭＳ Ｐゴシック; font-weight: bold; font-size: 12pt; "
+		>
+		</Control>
+		<Control 
+		Type="BARCODE.BarCodeCtrl.1"
+		CLSID="{D9347033-9612-11D1-9D75-00C04FCC8CDC}"
+		Name="barWarehouseId"
+		DataField="WarehouseId"
+		Left="2268"
+		Top="1134"
+		Width="2834"
+		Height="709"
+		>
+<![CDATA[0202000089130000DC04000002000600020000000200010002000400020000000300010000000800220000002A00310032003300340035003600200043004F00
+		440045002D00330039002A0000001300000000001300FFFFFF00]]>
+		</Control>
+		<Control 
+		Type="BARCODE.BarCodeCtrl.1"
+		CLSID="{D9347033-9612-11D1-9D75-00C04FCC8CDC}"
+		Name="barFabId"
+		DataField="FabId"
+		Left="2268"
+		Top="1984"
+		Width="2834"
+		Height="709"
+		>
+<![CDATA[0202000089130000DC040000020006000200FFFF0200010002000300020000000300010000000800220000002A00310032003300340035003600200043004F00
+		440045002D00330039002A0000001300000000001300FFFFFF00]]>
+		</Control>
+		<Control 
+		Type="BARCODE.BarCodeCtrl.1"
+		CLSID="{D9347033-9612-11D1-9D75-00C04FCC8CDC}"
+		Name="barCustomerId"
+		DataField="CustomerId"
+		Left="2268"
+		Top="2835"
+		Width="2834"
+		Height="708"
+		>
+<![CDATA[0202000089130000DC04000002000600020000000200010002000300020000000300010000000800220000002A00310032003300340035003600200043004F00
+		440045002D00330039002A0000001300000000001300FFFFFF00]]>
+		</Control>
+		<Control 
+		Type="BARCODE.BarCodeCtrl.1"
+		CLSID="{D9347033-9612-11D1-9D75-00C04FCC8CDC}"
+		Name="barSTC_ProductCode"
+		DataField="STC_ProductCode"
+		Left="2268"
+		Top="3685"
+		Width="2834"
+		Height="708"
+		>
+<![CDATA[0202000089130000DC040000020006000200FFFF0200010002000300020000000300010000000800220000002A00310032003300340035003600200043004F00
+		440045002D00330039002A0000001300000000001300FFFFFF00]]>
+		</Control>
+		<Control 
+		Type="AR.Shape"
+		Name="Shape4"
+		Left="2268"
+		Top="4535"
+		Width="3401"
+		Height="567"
+		>
+		</Control>
+		<Control 
+		Type="AR.Label"
+		Name="Label11"
+		Left="6803"
+		Top="1134"
+		Width="1134"
+		Height="283"
+		Caption="承認"
+		ClassName="Normal"
+		Style="text-align: center; vertical-align: middle; font-family: ＭＳ Ｐゴシック; font-size: 12pt; "
+		>
+		</Control>
+		<Control 
+		Type="AR.Label"
+		Name="Label12"
+		Left="7937"
+		Top="1134"
+		Width="1134"
+		Height="283"
+		Caption="担当"
+		ClassName="Normal"
+		Style="text-align: center; vertical-align: middle; font-family: ＭＳ Ｐゴシック; font-size: 12pt; "
+		>
+		</Control>
+		<Control 
+		Type="AR.Shape"
+		Name="Shape1"
+		Left="6803"
+		Top="1134"
+		Width="2268"
+		Height="283"
+		>
+		</Control>
+		<Control 
+		Type="AR.Shape"
+		Name="Shape5"
+		Left="6803"
+		Top="850"
+		Width="2268"
+		Height="284"
+		>
+		</Control>
+		<Control 
+		Type="AR.Shape"
+		Name="Shape2"
+		Left="6803"
+		Top="1134"
+		Width="1134"
+		Height="1417"
+		>
+		</Control>
+		<Control 
+		Type="AR.Shape"
+		Name="Shape3"
+		Left="7937"
+		Top="1134"
+		Width="1134"
+		Height="1417"
+		>
+		</Control>
+		<Control 
+		Type="AR.Field"
+		Name="Field10"
+		Left="8079"
+		Top="142"
+		Width="283"
+		Height="283"
+		Text="Fi"
+		SummaryType="4"
+		SummaryFunc="0"
+		SummaryRunning="2"
+		ClassName="Normal"
+		Style="font-size: 12pt; "
+		>
+		</Control>
+		<Control 
+		Type="AR.Field"
+		Name="Field9"
+		Left="8504"
+		Top="142"
+		Width="283"
+		Height="283"
+		Text="Fi"
+		SummaryType="4"
+		SummaryFunc="0"
+		SummaryRunning="0"
+		ClassName="Normal"
+		Style="font-size: 12pt; "
+		>
+		</Control>
+		<Control 
+		Type="AR.Label"
+		Name="Label14"
+		Left="8362"
+		Top="142"
+		Width="142"
+		Height="283"
+		Caption="/"
+		ClassName="Normal"
+		Style="font-size: 12pt; "
+		>
+		</Control>
+		<Control 
+		Type="AR.Label"
+		Name="Label22"
+		Left="5953"
+		Top="567"
+		Width="992"
+		Height="283"
+		Caption="出力日："
+		ClassName="Normal"
+		Style="font-family: ＭＳ Ｐゴシック; font-size: 12pt; "
+		>
+		</Control>
+		<Control 
+		Type="AR.Field"
+		Name="Field18"
+		DataField="PrintDate"
+		Left="6945"
+		Top="567"
+		Width="2126"
+		Height="283"
+		Text="PrintDate"
+		ClassName="Normal"
+		>
+		</Control>
+		<Control 
+		Type="AR.Field"
+		Name="Field19"
+		DataField="DocumentId"
+		Left="6803"
+		Top="2693"
+		Width="2268"
+		Height="283"
+		Text="DocumentId"
+		ClassName="Normal"
+		>
+		</Control>
+	</Section>
+	<Section Type="Detail" Name="Detail"
+		Height="3975"
+	>
+		<Control 
+		Type="AR.DAO"
+		Name="DAODataControl1"
+		Left="8646"
+		Top="283"
+		Width="850"
+		Height="567"
+		Visible="0"
+		Connect="Access"
+		DatabaseName="F:\TD_PJ\MIS_Reports\mis_rpt_tbl.mdb"
+		RecordSource="TD_Material_Warehousing_rpt_tbl"
+		>
+		</Control>
+		<Control 
+		Type="AR.Label"
+		Name="Label7"
+		Left="567"
+		Top="567"
+		Width="2268"
+		Height="567"
+		Caption="ロットインゴットNo. (ロット番号)"
+		ClassName="Normal"
+		Style="font-family: ＭＳ Ｐゴシック; font-weight: bold; font-size: 12pt; "
+		>
+		</Control>
+		<Control 
+		Type="AR.Label"
+		Name="Label8"
+		Left="567"
+		Top="1417"
+		Width="2268"
+		Height="284"
+		Caption="ケースインゴットNo."
+		ClassName="Normal"
+		Style="font-family: ＭＳ Ｐゴシック; font-weight: bold; font-size: 12pt; "
+		>
+		</Control>
+		<Control 
+		Type="AR.Label"
+		Name="Label9"
+		Left="567"
+		Top="2268"
+		Width="1984"
+		Height="283"
+		Caption="数量　（重量） (g)"
+		ClassName="Normal"
+		Style="font-family: ＭＳ Ｐゴシック; font-weight: bold; font-size: 12pt; "
+		>
+		</Control>
+		<Control 
+		Type="AR.Label"
+		Name="Label10"
+		Left="567"
+		Top="3118"
+		Width="2268"
+		Height="284"
+		Caption="本数"
+		ClassName="Normal"
+		Style="font-family: ＭＳ Ｐゴシック; font-weight: bold; font-size: 12pt; "
+		>
+		</Control>
+		<Control 
+		Type="BARCODE.BarCodeCtrl.1"
+		CLSID="{D9347033-9612-11D1-9D75-00C04FCC8CDC}"
+		Name="barLot_IngotId"
+		DataField="Lot_IngotId"
+		Left="2835"
+		Top="567"
+		Width="2834"
+		Height="709"
+		>
+<![CDATA[0202000089130000DC04000002000600020000000200010002000300020000000300010000000800220000002A00310032003300340035003600200043004F00
+		440045002D00330039002A0000001300000000001300FFFFFF00]]>
+		</Control>
+		<Control 
+		Type="BARCODE.BarCodeCtrl.1"
+		CLSID="{D9347033-9612-11D1-9D75-00C04FCC8CDC}"
+		Name="barCase_IngotId"
+		DataField="Case_IngotId"
+		Left="2835"
+		Top="1417"
+		Width="2834"
+		Height="709"
+		>
+<![CDATA[0202000089130000DC04000002000600020000000200010002000300020000000300010000000800220000002A00310032003300340035003600200043004F00
+		440045002D00330039002A0000001300000000001300FFFFFF00]]>
+		</Control>
+		<Control 
+		Type="BARCODE.BarCodeCtrl.1"
+		CLSID="{D9347033-9612-11D1-9D75-00C04FCC8CDC}"
+		Name="barNetWeight"
+		DataField="NetWeight"
+		Left="2835"
+		Top="2268"
+		Width="2834"
+		Height="708"
+		>
+<![CDATA[0202000089130000DC04000002000600020000000200010002000300020000000300010000000800220000002A00310032003300340035003600200043004F00
+		440045002D00330039002A0000001300000000001300FFFFFF00]]>
+		</Control>
+		<Control 
+		Type="BARCODE.BarCodeCtrl.1"
+		CLSID="{D9347033-9612-11D1-9D75-00C04FCC8CDC}"
+		Name="barNumber"
+		DataField="Number"
+		Left="2835"
+		Top="3118"
+		Width="2834"
+		Height="709"
+		>
+<![CDATA[0202000089130000DC040000020006000200FFFF0200010002000300020000000300010000000800220000002A00310032003300340035003600200043004F00
+		440045002D00330039002A0000001300000000001300FFFFFF00]]>
+		</Control>
+	</Section>
+	<Section Type="PageFooter" Name="PageFooter"
+		Height="165"
+	>
+	</Section>
+</Sections>
+</ActiveReportsLayout>

@@ -1,0 +1,784 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Report xmlns="http://schemas.microsoft.com/sqlserver/reporting/2005/01/reportdefinition">
+	<dd:Name xmlns:dd="http://schemas.datadynamics.com/reporting/2005/02/reportdefinition">Report1</dd:Name>
+	<Body>
+		<Height>17.4177cm</Height>
+		<ReportItems>
+			<CustomReportItem Name="ParentBandedList">
+				<Type>BandedList</Type>
+				<Width>6.69375in</Width>
+				<Height>17.4177cm</Height>
+				<Style />
+				<CustomData>
+					<DataSetName>DataSet1</DataSetName>
+					<DataRowGroupings>
+						<DataGroupings>
+							<DataGrouping>
+								<Grouping Name="PageHeader">
+									<GroupExpressions>
+										<GroupExpression>=Globals.PageNumber</GroupExpression>
+									</GroupExpressions>
+								</Grouping>
+								<dd:Container xmlns:dd="http://schemas.datadynamics.com/reporting/2005/02/reportdefinition">
+									<ReportItems>
+										<Textbox Name="Label13">
+											<Height>0.1972222in</Height>
+											<Left>4.52734in</Left>
+											<Value>結晶課</Value>
+											<Style>
+												<BackgroundColor>Transparent</BackgroundColor>
+												<Color>#000000</Color>
+												<Direction>LTR</Direction>
+												<FontFamily>ＭＳ Ｐゴシック</FontFamily>
+												<FontSize>12pt</FontSize>
+												<TextAlign>Center</TextAlign>
+												<VerticalAlign>Middle</VerticalAlign>
+												<dd:TextJustify>Auto</dd:TextJustify>
+												<BorderStyle>
+													<Default>Solid</Default>
+												</BorderStyle>
+											</Style>
+											<Top>0.5944445in</Top>
+											<Width>1.575in</Width>
+											<ZIndex>27</ZIndex>
+										</Textbox>
+										<Textbox Name="Label1">
+											<Height>0.2951389in</Height>
+											<Left>1.18125in</Left>
+											<Value>TD破砕素材入庫兼出庫伝票</Value>
+											<Style>
+												<BackgroundColor>Transparent</BackgroundColor>
+												<Color>#000000</Color>
+												<Direction>LTR</Direction>
+												<FontFamily>ＭＳ Ｐゴシック</FontFamily>
+												<FontSize>16pt</FontSize>
+												<FontWeight>700</FontWeight>
+												<TextAlign>Left</TextAlign>
+												<dd:TextJustify>Auto</dd:TextJustify>
+											</Style>
+											<Top>0.09861111in</Top>
+											<Width>2.854167in</Width>
+											<ZIndex>6</ZIndex>
+										</Textbox>
+										<Textbox Name="Label2">
+											<Height>0.1965278in</Height>
+											<Left>0.39375in</Left>
+											<Value>倉庫番号</Value>
+											<Style>
+												<BackgroundColor>Transparent</BackgroundColor>
+												<Color>#000000</Color>
+												<Direction>LTR</Direction>
+												<FontFamily>ＭＳ Ｐゴシック</FontFamily>
+												<FontSize>12pt</FontSize>
+												<FontWeight>700</FontWeight>
+												<TextAlign>Left</TextAlign>
+												<dd:TextJustify>Auto</dd:TextJustify>
+											</Style>
+											<Top>0.7875in</Top>
+											<Width>1.18125in</Width>
+											<ZIndex>7</ZIndex>
+										</Textbox>
+										<Textbox Name="Label3">
+											<Height>0.1972222in</Height>
+											<Left>0.39375in</Left>
+											<Value>工場区分</Value>
+											<Style>
+												<BackgroundColor>Transparent</BackgroundColor>
+												<Color>#000000</Color>
+												<Direction>LTR</Direction>
+												<FontFamily>ＭＳ Ｐゴシック</FontFamily>
+												<FontSize>12pt</FontSize>
+												<FontWeight>700</FontWeight>
+												<TextAlign>Left</TextAlign>
+												<dd:TextJustify>Auto</dd:TextJustify>
+											</Style>
+											<Top>1.377778in</Top>
+											<Width>1.18125in</Width>
+											<ZIndex>8</ZIndex>
+										</Textbox>
+										<Textbox Name="Label4">
+											<Height>0.1965278in</Height>
+											<Left>0.39375in</Left>
+											<Value>客先</Value>
+											<Style>
+												<BackgroundColor>Transparent</BackgroundColor>
+												<Color>#000000</Color>
+												<Direction>LTR</Direction>
+												<FontFamily>ＭＳ Ｐゴシック</FontFamily>
+												<FontSize>12pt</FontSize>
+												<FontWeight>700</FontWeight>
+												<TextAlign>Left</TextAlign>
+												<dd:TextJustify>Auto</dd:TextJustify>
+											</Style>
+											<Top>1.96875in</Top>
+											<Width>1.18125in</Width>
+											<ZIndex>9</ZIndex>
+										</Textbox>
+										<Textbox Name="Label5">
+											<Height>0.1972222in</Height>
+											<Left>0.39375in</Left>
+											<Value>客先コード</Value>
+											<Style>
+												<BackgroundColor>Transparent</BackgroundColor>
+												<Color>#000000</Color>
+												<Direction>LTR</Direction>
+												<FontFamily>ＭＳ Ｐゴシック</FontFamily>
+												<FontSize>12pt</FontSize>
+												<FontWeight>700</FontWeight>
+												<TextAlign>Left</TextAlign>
+												<dd:TextJustify>Auto</dd:TextJustify>
+											</Style>
+											<Top>2.559028in</Top>
+											<Width>1.18125in</Width>
+											<ZIndex>10</ZIndex>
+										</Textbox>
+										<Textbox Name="Label6">
+											<Height>0.1972222in</Height>
+											<Left>0.39375in</Left>
+											<Value>伝票No.</Value>
+											<Style>
+												<BackgroundColor>Transparent</BackgroundColor>
+												<Color>#000000</Color>
+												<Direction>LTR</Direction>
+												<FontFamily>ＭＳ Ｐゴシック</FontFamily>
+												<FontSize>12pt</FontSize>
+												<FontWeight>700</FontWeight>
+												<TextAlign>Left</TextAlign>
+												<dd:TextJustify>Auto</dd:TextJustify>
+											</Style>
+											<Top>3.247917in</Top>
+											<Width>1.18125in</Width>
+											<ZIndex>11</ZIndex>
+										</Textbox>
+										<Shape Name="Shape4">
+											<Height>0.39375in</Height>
+											<Left>1.575in</Left>
+											<Style>
+												<BackgroundColor>Transparent</BackgroundColor>
+												<BorderColor>
+													<Default>Black</Default>
+												</BorderColor>
+												<BorderStyle>
+													<Default>Solid</Default>
+												</BorderStyle>
+												<BorderWidth>
+													<Default>0.7500002pt</Default>
+												</BorderWidth>
+											</Style>
+											<Top>3.149306in</Top>
+											<Width>2.361805in</Width>
+											<ZIndex>16</ZIndex>
+											<dd:ShapeStyle>Rectangle</dd:ShapeStyle>
+										</Shape>
+										<Textbox Name="Label11">
+											<Height>0.234in</Height>
+											<Left>4.527341in</Left>
+											<Value>承認</Value>
+											<Style>
+												<BackgroundColor>Transparent</BackgroundColor>
+												<Color>#000000</Color>
+												<Direction>LTR</Direction>
+												<FontFamily>ＭＳ Ｐゴシック</FontFamily>
+												<FontSize>12pt</FontSize>
+												<TextAlign>Center</TextAlign>
+												<VerticalAlign>Middle</VerticalAlign>
+												<dd:TextJustify>Auto</dd:TextJustify>
+												<BorderStyle>
+													<Default>Solid</Default>
+												</BorderStyle>
+											</Style>
+											<Top>0.7916667in</Top>
+											<Width>0.7875in</Width>
+											<ZIndex>3</ZIndex>
+										</Textbox>
+										<Textbox Name="Label12">
+											<Height>0.226in</Height>
+											<Left>5.324842in</Left>
+											<Value>担当</Value>
+											<Style>
+												<BackgroundColor>Transparent</BackgroundColor>
+												<Color>#000000</Color>
+												<Direction>LTR</Direction>
+												<FontFamily>ＭＳ Ｐゴシック</FontFamily>
+												<FontSize>12pt</FontSize>
+												<TextAlign>Center</TextAlign>
+												<VerticalAlign>Middle</VerticalAlign>
+												<dd:TextJustify>Auto</dd:TextJustify>
+												<BorderStyle>
+													<Default>Solid</Default>
+												</BorderStyle>
+											</Style>
+											<Top>0.7916667in</Top>
+											<Width>0.7875in</Width>
+											<ZIndex>2</ZIndex>
+										</Textbox>
+										<Textbox Name="Field10">
+											<CanGrow>true</CanGrow>
+											<Height>0.1965278in</Height>
+											<Left>5.610417in</Left>
+											<Value>Fi</Value>
+											<Style>
+												<BackgroundColor>Transparent</BackgroundColor>
+												<Color>#000000</Color>
+												<Direction>LTR</Direction>
+												<FontFamily>Arial</FontFamily>
+												<FontSize>12pt</FontSize>
+												<TextAlign>Left</TextAlign>
+												<dd:TextJustify>Auto</dd:TextJustify>
+											</Style>
+											<Top>0.09861111in</Top>
+											<Width>0.1965278in</Width>
+											<ZIndex>17</ZIndex>
+										</Textbox>
+										<Textbox Name="Field9">
+											<CanGrow>true</CanGrow>
+											<Height>0.1965278in</Height>
+											<Left>5.905556in</Left>
+											<Value>Fi</Value>
+											<Style>
+												<BackgroundColor>Transparent</BackgroundColor>
+												<Color>#000000</Color>
+												<Direction>LTR</Direction>
+												<FontFamily>Arial</FontFamily>
+												<FontSize>12pt</FontSize>
+												<TextAlign>Left</TextAlign>
+												<dd:TextJustify>Auto</dd:TextJustify>
+											</Style>
+											<Top>0.09861111in</Top>
+											<Width>0.1965278in</Width>
+											<ZIndex>18</ZIndex>
+										</Textbox>
+										<Textbox Name="Label14">
+											<Height>0.1965278in</Height>
+											<Left>5.806944in</Left>
+											<Value>/</Value>
+											<Style>
+												<BackgroundColor>Transparent</BackgroundColor>
+												<Color>#000000</Color>
+												<Direction>LTR</Direction>
+												<FontFamily>Arial</FontFamily>
+												<FontSize>12pt</FontSize>
+												<TextAlign>Left</TextAlign>
+												<dd:TextJustify>Auto</dd:TextJustify>
+											</Style>
+											<Top>0.09861111in</Top>
+											<Width>0.09861111in</Width>
+											<ZIndex>19</ZIndex>
+										</Textbox>
+										<Textbox Name="Label22">
+											<Height>0.1965278in</Height>
+											<Left>4.135404in</Left>
+											<Value>出力日：</Value>
+											<Style>
+												<BackgroundColor>Transparent</BackgroundColor>
+												<Color>#000000</Color>
+												<Direction>LTR</Direction>
+												<FontFamily>ＭＳ Ｐゴシック</FontFamily>
+												<FontSize>12pt</FontSize>
+												<TextAlign>Left</TextAlign>
+												<dd:TextJustify>Auto</dd:TextJustify>
+											</Style>
+											<Top>0.39375in</Top>
+											<Width>0.6888889in</Width>
+											<ZIndex>20</ZIndex>
+										</Textbox>
+										<Textbox Name="Field18">
+											<CanGrow>true</CanGrow>
+											<Height>0.1965in</Height>
+											<Left>4.831945in</Left>
+											<Value>=Fields!PrintDate.Value</Value>
+											<Style>
+												<BackgroundColor>Transparent</BackgroundColor>
+												<Color>#000000</Color>
+												<Direction>LTR</Direction>
+												<FontFamily>Arial</FontFamily>
+												<FontSize>10pt</FontSize>
+												<TextAlign>Left</TextAlign>
+												<dd:TextJustify>Auto</dd:TextJustify>
+											</Style>
+											<Top>0.39375in</Top>
+											<Width>1.2826in</Width>
+											<ZIndex>21</ZIndex>
+										</Textbox>
+										<Textbox Name="Field19">
+											<CanGrow>true</CanGrow>
+											<Height>0.4857in</Height>
+											<Left>4.541508in</Left>
+											<Value>=First(Fields!DocumentId.Value, "DataSet1")</Value>
+											<Style>
+												<BackgroundColor>Transparent</BackgroundColor>
+												<Color>#000000</Color>
+												<Direction>LTR</Direction>
+												<FontFamily>Arial</FontFamily>
+												<FontSize>10pt</FontSize>
+												<TextAlign>Left</TextAlign>
+												<dd:TextJustify>Auto</dd:TextJustify>
+											</Style>
+											<Top>2.076823in</Top>
+											<Width>1.575in</Width>
+											<ZIndex>22</ZIndex>
+										</Textbox>
+										<CustomReportItem Name="barWarehouseId">
+											<Type>Barcode</Type>
+											<Top>2.010833cm</Top>
+											<Left>3.995208cm</Left>
+											<Width>5.3181cm</Width>
+											<Height>1.1906cm</Height>
+											<ZIndex>23</ZIndex>
+											<Style>
+												<FontFamily>Courier New</FontFamily>
+												<FontSize>10pt</FontSize>
+												<FontStyle>Normal</FontStyle>
+												<FontWeight>400</FontWeight>
+												<TextDecoration>None</TextDecoration>
+											</Style>
+											<CustomProperties>
+												<CustomProperty>
+													<Name>dd:Symbology</Name>
+													<Value>Code39</Value>
+												</CustomProperty>
+												<CustomProperty>
+													<Name>dd:Value</Name>
+													<Value>=First(Fields!WarehouseId.Value, "DataSet1")</Value>
+												</CustomProperty>
+												<CustomProperty>
+													<Name>dd:CaptionLocation</Name>
+													<Value>Below</Value>
+												</CustomProperty>
+											</CustomProperties>
+										</CustomReportItem>
+										<CustomReportItem Name="Barcode2">
+											<Type>Barcode</Type>
+											<Top>3.4925cm</Top>
+											<Left>4.074584cm</Left>
+											<Width>5.2123cm</Width>
+											<Height>1.3229cm</Height>
+											<ZIndex>24</ZIndex>
+											<Style>
+												<FontFamily>Courier New</FontFamily>
+												<FontSize>10pt</FontSize>
+												<FontStyle>Normal</FontStyle>
+												<FontWeight>400</FontWeight>
+											</Style>
+											<CustomProperties>
+												<CustomProperty>
+													<Name>dd:Symbology</Name>
+													<Value>Code39</Value>
+												</CustomProperty>
+												<CustomProperty>
+													<Name>dd:Value</Name>
+													<Value>=First(Fields!FabId.Value, "DataSet1")</Value>
+												</CustomProperty>
+												<CustomProperty>
+													<Name>dd:CaptionLocation</Name>
+													<Value>Below</Value>
+												</CustomProperty>
+											</CustomProperties>
+										</CustomReportItem>
+										<CustomReportItem Name="Barcode3">
+											<Type>Barcode</Type>
+											<Top>5.08cm</Top>
+											<Left>4.048125cm</Left>
+											<Width>5.159375cm</Width>
+											<Height>1.190625cm</Height>
+											<ZIndex>25</ZIndex>
+											<Style>
+												<FontFamily>Courier New</FontFamily>
+												<FontSize>10pt</FontSize>
+												<FontStyle>Normal</FontStyle>
+												<FontWeight>400</FontWeight>
+											</Style>
+											<CustomProperties>
+												<CustomProperty>
+													<Name>dd:Symbology</Name>
+													<Value>Code39</Value>
+												</CustomProperty>
+												<CustomProperty>
+													<Name>dd:Value</Name>
+													<Value>=First(Fields!CustomerId.Value, "DataSet1")</Value>
+												</CustomProperty>
+												<CustomProperty>
+													<Name>dd:CaptionLocation</Name>
+													<Value>Below</Value>
+												</CustomProperty>
+											</CustomProperties>
+										</CustomReportItem>
+										<CustomReportItem Name="Barcode4">
+											<Type>Barcode</Type>
+											<Top>6.614583cm</Top>
+											<Left>4.074584cm</Left>
+											<Width>5.132916cm</Width>
+											<Height>1.164167cm</Height>
+											<ZIndex>26</ZIndex>
+											<Style>
+												<FontFamily>Courier New</FontFamily>
+												<FontSize>10pt</FontSize>
+												<FontStyle>Normal</FontStyle>
+												<FontWeight>400</FontWeight>
+											</Style>
+											<CustomProperties>
+												<CustomProperty>
+													<Name>dd:Symbology</Name>
+													<Value>Code39</Value>
+												</CustomProperty>
+												<CustomProperty>
+													<Name>dd:Value</Name>
+													<Value>=First(Fields!STC_ProductCode.Value, "DataSet1")</Value>
+												</CustomProperty>
+												<CustomProperty>
+													<Name>dd:CaptionLocation</Name>
+													<Value>Below</Value>
+												</CustomProperty>
+											</CustomProperties>
+										</CustomReportItem>
+										<Shape Name="Shape1">
+											<Height>2.6051cm</Height>
+											<Left>11.50772cm</Left>
+											<Style>
+												<BorderStyle>
+													<Default>Solid</Default>
+												</BorderStyle>
+											</Style>
+											<Top>2.584776cm</Top>
+											<Width>1.9742cm</Width>
+											<ZIndex>28</ZIndex>
+											<dd:ShapeStyle>Rectangle</dd:ShapeStyle>
+										</Shape>
+										<Shape Name="Shape2">
+											<Height>2.6051cm</Height>
+											<Left>13.52509cm</Left>
+											<Style>
+												<BorderStyle>
+													<Default>Solid</Default>
+												</BorderStyle>
+											</Style>
+											<Top>2.579793cm</Top>
+											<Width>1.9742cm</Width>
+											<ZIndex>29</ZIndex>
+											<dd:ShapeStyle>Rectangle</dd:ShapeStyle>
+										</Shape>
+									</ReportItems>
+								</dd:Container>
+								<DataGroupings>
+									<DataGrouping>
+										<dd:Container xmlns:dd="http://schemas.datadynamics.com/reporting/2005/02/reportdefinition">
+											<ReportItems>
+												<Textbox Name="Label7">
+													<Height>0.39375in</Height>
+													<Left>0.39375in</Left>
+													<Value>ロットインゴットNo. (ロット番号)</Value>
+													<Style>
+														<BackgroundColor>Transparent</BackgroundColor>
+														<Color>#000000</Color>
+														<Direction>LTR</Direction>
+														<FontFamily>ＭＳ Ｐゴシック</FontFamily>
+														<FontSize>12pt</FontSize>
+														<FontWeight>700</FontWeight>
+														<TextAlign>Left</TextAlign>
+														<dd:TextJustify>Auto</dd:TextJustify>
+													</Style>
+													<Top>0.39375in</Top>
+													<Width>1.575in</Width>
+												</Textbox>
+												<Textbox Name="Label8">
+													<Height>0.1972222in</Height>
+													<Left>0.39375in</Left>
+													<Value>ケースインゴットNo.</Value>
+													<Style>
+														<BackgroundColor>Transparent</BackgroundColor>
+														<Color>#000000</Color>
+														<Direction>LTR</Direction>
+														<FontFamily>ＭＳ Ｐゴシック</FontFamily>
+														<FontSize>12pt</FontSize>
+														<FontWeight>700</FontWeight>
+														<TextAlign>Left</TextAlign>
+														<dd:TextJustify>Auto</dd:TextJustify>
+													</Style>
+													<Top>0.9840278in</Top>
+													<Width>1.575in</Width>
+													<ZIndex>1</ZIndex>
+												</Textbox>
+												<Textbox Name="Label9">
+													<Height>0.1965278in</Height>
+													<Left>0.39375in</Left>
+													<Value>数量　（重量） (g)</Value>
+													<Style>
+														<BackgroundColor>Transparent</BackgroundColor>
+														<Color>#000000</Color>
+														<Direction>LTR</Direction>
+														<FontFamily>ＭＳ Ｐゴシック</FontFamily>
+														<FontSize>12pt</FontSize>
+														<FontWeight>700</FontWeight>
+														<TextAlign>Left</TextAlign>
+														<dd:TextJustify>Auto</dd:TextJustify>
+													</Style>
+													<Top>1.575in</Top>
+													<Width>1.377778in</Width>
+													<ZIndex>2</ZIndex>
+												</Textbox>
+												<Textbox Name="Label10">
+													<Height>0.1972222in</Height>
+													<Left>0.39375in</Left>
+													<Value>本数</Value>
+													<Style>
+														<BackgroundColor>Transparent</BackgroundColor>
+														<Color>#000000</Color>
+														<Direction>LTR</Direction>
+														<FontFamily>ＭＳ Ｐゴシック</FontFamily>
+														<FontSize>12pt</FontSize>
+														<FontWeight>700</FontWeight>
+														<TextAlign>Left</TextAlign>
+														<dd:TextJustify>Auto</dd:TextJustify>
+													</Style>
+													<Top>2.165278in</Top>
+													<Width>1.575in</Width>
+													<ZIndex>3</ZIndex>
+												</Textbox>
+												<CustomReportItem Name="Barcode5">
+													<Type>Barcode</Type>
+													<Top>1.005417cm</Top>
+													<Left>5.000625cm</Left>
+													<Width>5.5033cm</Width>
+													<Height>1.27cm</Height>
+													<ZIndex>4</ZIndex>
+													<Style>
+														<FontFamily>Courier New</FontFamily>
+														<FontSize>10pt</FontSize>
+														<FontStyle>Normal</FontStyle>
+														<FontWeight>400</FontWeight>
+													</Style>
+													<CustomProperties>
+														<CustomProperty>
+															<Name>dd:Symbology</Name>
+															<Value>Code39</Value>
+														</CustomProperty>
+														<CustomProperty>
+															<Name>dd:CaptionLocation</Name>
+															<Value>Below</Value>
+														</CustomProperty>
+														<CustomProperty>
+															<Name>dd:Value</Name>
+															<Value>=First(Fields!Lot_IngotId.Value, "DataSet1")</Value>
+														</CustomProperty>
+													</CustomProperties>
+												</CustomReportItem>
+												<CustomReportItem Name="Barcode6">
+													<Type>Barcode</Type>
+													<Top>2.592917cm</Top>
+													<Left>5.053542cm</Left>
+													<Width>5.371042cm</Width>
+													<Height>1.058333cm</Height>
+													<ZIndex>5</ZIndex>
+													<Style>
+														<FontFamily>Courier New</FontFamily>
+														<FontSize>10pt</FontSize>
+														<FontStyle>Normal</FontStyle>
+														<FontWeight>400</FontWeight>
+													</Style>
+													<CustomProperties>
+														<CustomProperty>
+															<Name>dd:Symbology</Name>
+															<Value>Code39</Value>
+														</CustomProperty>
+														<CustomProperty>
+															<Name>dd:CaptionLocation</Name>
+															<Value>Below</Value>
+														</CustomProperty>
+														<CustomProperty>
+															<Name>dd:Value</Name>
+															<Value>=First(Fields!Case_IngotId.Value, "DataSet1")</Value>
+														</CustomProperty>
+													</CustomProperties>
+												</CustomReportItem>
+												<CustomReportItem Name="Barcode7">
+													<Type>Barcode</Type>
+													<Top>4.048125cm</Top>
+													<Left>5.053542cm</Left>
+													<Width>5.344584cm</Width>
+													<Height>1.190625cm</Height>
+													<ZIndex>6</ZIndex>
+													<Style>
+														<FontFamily>Courier New</FontFamily>
+														<FontSize>10pt</FontSize>
+														<FontStyle>Normal</FontStyle>
+														<FontWeight>400</FontWeight>
+													</Style>
+													<CustomProperties>
+														<CustomProperty>
+															<Name>dd:Symbology</Name>
+															<Value>Code39</Value>
+														</CustomProperty>
+														<CustomProperty>
+															<Name>dd:Value</Name>
+															<Value>=First(Fields!NetWeight.Value, "DataSet1")</Value>
+														</CustomProperty>
+														<CustomProperty>
+															<Name>dd:CaptionLocation</Name>
+															<Value>Below</Value>
+														</CustomProperty>
+													</CustomProperties>
+												</CustomReportItem>
+												<CustomReportItem Name="Barcode8">
+													<Type>Barcode</Type>
+													<Top>5.635625cm</Top>
+													<Left>5.053542cm</Left>
+													<Width>5.185833cm</Width>
+													<Height>1.11125cm</Height>
+													<ZIndex>7</ZIndex>
+													<Style>
+														<FontFamily>Courier New</FontFamily>
+														<FontSize>10pt</FontSize>
+														<FontStyle>Normal</FontStyle>
+														<FontWeight>400</FontWeight>
+													</Style>
+													<CustomProperties>
+														<CustomProperty>
+															<Name>dd:Symbology</Name>
+															<Value>Code39</Value>
+														</CustomProperty>
+														<CustomProperty>
+															<Name>dd:Value</Name>
+															<Value>=First(Fields!Number.Value, "DataSet1")</Value>
+														</CustomProperty>
+														<CustomProperty>
+															<Name>dd:CaptionLocation</Name>
+															<Value>Below</Value>
+														</CustomProperty>
+													</CustomProperties>
+												</CustomReportItem>
+											</ReportItems>
+										</dd:Container>
+									</DataGrouping>
+								</DataGroupings>
+							</DataGrouping>
+						</DataGroupings>
+					</DataRowGroupings>
+				</CustomData>
+				<BandedListConfig xmlns="http://schemas.datadynamics.com/reporting/2005/02/reportdefinition/">
+	<Groups>
+		<Group Name="PageHeader">
+			<HeaderBand>
+				<Height>10.11521cm</Height>
+				<KeepTogether>false</KeepTogether>
+				<ReportItems>
+					<ReportItemReference Name="Label13" />
+					<ReportItemReference Name="Label1" />
+					<ReportItemReference Name="Label2" />
+					<ReportItemReference Name="Label3" />
+					<ReportItemReference Name="Label4" />
+					<ReportItemReference Name="Label5" />
+					<ReportItemReference Name="Label6" />
+					<ReportItemReference Name="Shape4" />
+					<ReportItemReference Name="Label11" />
+					<ReportItemReference Name="Label12" />
+					<ReportItemReference Name="Field10" />
+					<ReportItemReference Name="Field9" />
+					<ReportItemReference Name="Label14" />
+					<ReportItemReference Name="Label22" />
+					<ReportItemReference Name="Field18" />
+					<ReportItemReference Name="Field19" />
+					<ReportItemReference Name="barWarehouseId" />
+					<ReportItemReference Name="Barcode2" />
+					<ReportItemReference Name="Barcode3" />
+					<ReportItemReference Name="Barcode4" />
+					<ReportItemReference Name="Shape1" />
+					<ReportItemReference Name="Shape2" />
+				</ReportItems>
+				<Style>
+					<BackgroundColor>Inherit</BackgroundColor>
+				</Style>
+			</HeaderBand>
+			<FooterBand>
+				<Height>0.1145833in</Height>
+				<KeepTogether>false</KeepTogether>
+				<CanGrow>false</CanGrow>
+				<Style>
+					<BackgroundColor>Inherit</BackgroundColor>
+				</Style>
+				<RepeatOnNewPage>true</RepeatOnNewPage>
+				<PrintAtBottom>true</PrintAtBottom>
+			</FooterBand>
+			<Visibility>
+				<Hidden>false</Hidden>
+			</Visibility>
+		</Group>
+	</Groups>
+	<Details>
+		<Height>2.760417in</Height>
+		<KeepTogether>false</KeepTogether>
+		<ReportItems>
+			<ReportItemReference Name="Label7" />
+			<ReportItemReference Name="Label8" />
+			<ReportItemReference Name="Label9" />
+			<ReportItemReference Name="Label10" />
+			<ReportItemReference Name="Barcode5" />
+			<ReportItemReference Name="Barcode6" />
+			<ReportItemReference Name="Barcode7" />
+			<ReportItemReference Name="Barcode8" />
+		</ReportItems>
+		<Style>
+			<BackgroundColor>Inherit</BackgroundColor>
+		</Style>
+	</Details>
+</BandedListConfig>
+			</CustomReportItem>
+		</ReportItems>
+		<Style />
+	</Body>
+	<BottomMargin>1in</BottomMargin>
+	<LeftMargin>1in</LeftMargin>
+	<PageHeight>29.7cm</PageHeight>
+	<PageWidth>21cm</PageWidth>
+	<RightMargin>1in</RightMargin>
+	<TopMargin>1in</TopMargin>
+	<Width>6.69375in</Width>
+	<DataSources>
+		<DataSource Name="DataSource1">
+			<ConnectionProperties>
+				<ConnectString>data source=C:\MyDevelopment\VB.net\TD_Helmock_VB.NET_MDB\mis_rpt_tbl.mdb;provider=Microsoft.Jet.OLEDB.4.0;</ConnectString>
+				<DataProvider>OLEDB</DataProvider>
+			</ConnectionProperties>
+		</DataSource>
+	</DataSources>
+	<DataSets>
+		<DataSet Name="DataSet1">
+			<Fields>
+				<Field Name="Case_IngotId">
+					<DataField>Case_IngotId</DataField>
+				</Field>
+				<Field Name="CustomerId">
+					<DataField>CustomerId</DataField>
+				</Field>
+				<Field Name="DocumentId">
+					<DataField>DocumentId</DataField>
+				</Field>
+				<Field Name="FabId">
+					<DataField>FabId</DataField>
+				</Field>
+				<Field Name="Lot_IngotId">
+					<DataField>Lot_IngotId</DataField>
+				</Field>
+				<Field Name="NetWeight">
+					<DataField>NetWeight</DataField>
+				</Field>
+				<Field Name="Number">
+					<DataField>Number</DataField>
+				</Field>
+				<Field Name="PrintDate">
+					<DataField>PrintDate</DataField>
+				</Field>
+				<Field Name="STC_ProductCode">
+					<DataField>STC_ProductCode</DataField>
+				</Field>
+				<Field Name="WarehouseId">
+					<DataField>WarehouseId</DataField>
+				</Field>
+			</Fields>
+			<Query>
+				<CommandText>select TD_Material_Warehousing_rpt_tbl.Case_IngotId, TD_Material_Warehousing_rpt_tbl.CustomerId, TD_Material_Warehousing_rpt_tbl.DocumentId, TD_Material_Warehousing_rpt_tbl.FabId, TD_Material_Warehousing_rpt_tbl.Lot_IngotId, TD_Material_Warehousing_rpt_tbl.NetWeight, TD_Material_Warehousing_rpt_tbl.Number, TD_Material_Warehousing_rpt_tbl.PrintDate, TD_Material_Warehousing_rpt_tbl.STC_ProductCode, TD_Material_Warehousing_rpt_tbl.WarehouseId
+from TD_Material_Warehousing_rpt_tbl</CommandText>
+				<DataSourceName>DataSource1</DataSourceName>
+			</Query>
+		</DataSet>
+	</DataSets>
+</Report>

@@ -1,0 +1,1167 @@
+﻿<html>
+	<head>
+		<META HTTP-EQUIV="Content-Type" content="text/html; charset=utf-8">
+		<link rel="stylesheet" href="_UpgradeReport_Files\UpgradeReport.css">
+		<title>TD_Acceptance.vbp アップグレード レポート</title>
+		
+		<script language="javascript">
+			function outliner () {
+				oMe = window.event.srcElement
+				//get child element
+				var child = document.all[event.srcElement.getAttribute("child",false)];
+				//if child element exists, expand or collapse it.
+				if (null != child)
+					child.className = child.className == "collapsed" ? "expanded" : "collapsed";
+			}
+		
+			function changepic() {
+				uMe = window.event.srcElement;
+				var check = uMe.src.toLowerCase();
+				if (check.lastIndexOf("upgradereport_plus.gif") != -1)
+				{
+					uMe.src = "_UpgradeReport_Files/UpgradeReport_Minus.gif"
+				}
+				else
+				{
+					uMe.src = "_UpgradeReport_Files/UpgradeReport_Plus.gif"
+				}
+			}
+		</script>
+		
+	</head>
+	<body topmargin="0" leftmargin="0" rightmargin="0" onclick="outliner();">
+		<h1>TD_Acceptance.vbp のアップグレード レポート</h1>
+		
+		<p><span class="note">
+		<b>アップグレードの時間:  </b>2019/03/18 23:35<br>
+		</span></p>
+		
+		<h2>アップグレードの概要</h2>
+		<table cellpadding="2" cellspacing="0" width="98%" border="1" bordercolor="white" class="infotable">
+		    <tr>
+		        <td nowrap class="header" width="45%">見つかった問題の種類</td>
+		        <td nowrap class="header" width="45%">詳細情報</td>
+		        <td nowrap class="header" align="right">カウント</td>
+		    </tr>
+		    <tr class="row">
+		    <td class="SummaryIssueTypeContent">
+		        <IMG alt="選択範囲の展開/縮小" class="expanded" height="11" onclick=changepic() src="_UpgradeReport_Files/UpgradeReport_Minus.gif" width="9" child="SummaryIssueType0">
+		        &nbsp;コンパイル エラー
+		    </td>
+		    <td class="SummaryIssueTypeHelp">
+		        コンパイルを妨げる問題が発見されました。これらの問題はアプリケーションが実行される前に解決される必要があります。
+		    </td>
+		    <td class="SummaryIssueTypeCount">
+		        11
+		    </td>
+		    </tr>
+		    <tr class="expanded" bgcolor="white" id="SummaryIssueType0">
+		        <td colspan="3">
+		            <table cellpadding="2" cellspacing="0" width="100%" border="1" bordercolor="white" class="content">
+		    <tr class="row">
+		        <td class="SummaryIssueContent">
+		            <IMG alt="選択範囲の展開/縮小" class="expandable" height="11" onclick=changepic() src="_UpgradeReport_Files/UpgradeReport_Plus.gif" width="9" child="SummaryIssueType0GUID0">
+		            &nbsp;宣言ステートメントのパラメータはすべて完全に限定されなければなりません
+		        </td>
+		        <td class="SummaryIssueHelp">
+		            <a href='ms-help://MS.VSCC.v80/dv_commoner/local/redirect.htm?keyword="FAE78A8D-8978-4FD4-8208-5B7324A8F795"'>Declare ステートメントは As Any 型のパラメータをサポートしていません</a>
+		        </td>
+		        <td class="SummaryCount">3</td>
+		    </tr>
+		    <tr class="collapsed" bgcolor="white" id="SummaryIssueType0GUID0">
+		        <td colspan="3">
+		            <table cellpadding="2" cellspacing="0" width="100%" border="1" bordercolor="white" class="content">
+		                <tr class="row">
+		                    <td colspan="3" width="97%" class="SummaryFileContent">
+		                        <IMG alt="選択範囲の展開/縮小" class="expandable" height="11" onclick=changepic() src="_UpgradeReport_Files/UpgradeReport_Plus.gif" width="9" child="SummaryIssueType0GUID0File0">
+		                        &nbsp;clsIniFile.cls
+		                    </td>
+		                    <td class="SummaryFileCount">3</td>
+		                </tr>
+		                <tr class="collapsed" id="SummaryIssueType0GUID0File0" bgcolor="#ffffff">
+		                    <td colspan="4">
+		                    <table cellpadding="2" cellspacing="0" width="97%" border="1" bordercolor="#dcdcdc" class="content">
+		                        <tr bgcolor="#ffffff">
+		                            <td width="10" class="issuehdr">#</td>
+		                            <td nowrap class="issuehdr">場所</td>
+		                            <td nowrap class="issuehdr">オブジェクトの種類</td>
+		                            <td nowrap class="issuehdr">オブジェクト名</td>
+		                            <td nowrap class="issuehdr">プロパティ</td>
+		                            <td nowrap class="issuehdr">説明</td>
+		                        </tr>
+		                        <tr bgcolor="#ffffff">
+		                            <td class="issuecontent">1</td>
+		                            <td class="issuecontent">GetPrivateProfileString</td>
+		                            <td class="issuecontent"></td>
+		                            <td class="issuecontent"></td>
+		                            <td class="issuecontent"></td>
+		                            <td class="issuecontent"><a href='ms-help://MS.VSCC.v80/dv_commoner/local/redirect.htm?keyword="FAE78A8D-8978-4FD4-8208-5B7324A8F795"'>パラメータ 'As Any' の宣言はサポートされません。</a></td>
+		                        </tr>
+		                        <tr bgcolor="#ffffff">
+		                            <td class="issuecontent">2</td>
+		                            <td class="issuecontent">WritePrivateProfileString</td>
+		                            <td class="issuecontent"></td>
+		                            <td class="issuecontent"></td>
+		                            <td class="issuecontent"></td>
+		                            <td class="issuecontent"><a href='ms-help://MS.VSCC.v80/dv_commoner/local/redirect.htm?keyword="FAE78A8D-8978-4FD4-8208-5B7324A8F795"'>パラメータ 'As Any' の宣言はサポートされません。</a></td>
+		                        </tr>
+		                        <tr bgcolor="#ffffff">
+		                            <td class="issuecontent">3</td>
+		                            <td class="issuecontent">WritePrivateProfileString</td>
+		                            <td class="issuecontent"></td>
+		                            <td class="issuecontent"></td>
+		                            <td class="issuecontent"></td>
+		                            <td class="issuecontent"><a href='ms-help://MS.VSCC.v80/dv_commoner/local/redirect.htm?keyword="FAE78A8D-8978-4FD4-8208-5B7324A8F795"'>パラメータ 'As Any' の宣言はサポートされません。</a></td>
+		                        </tr>
+		                    </table>
+		                    </td>
+		                </tr>
+		            </table>
+		        </td>
+		    </tr>
+		    <tr class="row">
+		        <td class="SummaryIssueContent">
+		            <IMG alt="選択範囲の展開/縮小" class="expandable" height="11" onclick=changepic() src="_UpgradeReport_Files/UpgradeReport_Plus.gif" width="9" child="SummaryIssueType0GUID1">
+		            &nbsp;マウスのカーソルをカスタム ポインタに設定できません
+		        </td>
+		        <td class="SummaryIssueHelp">
+		            <a href='ms-help://MS.VSCC.v80/dv_commoner/local/redirect.htm?keyword="45116EAB-7060-405E-8ABE-9DBB40DC2E86"'>カスタムの MousePointer を設定できません</a>
+		        </td>
+		        <td class="SummaryCount">4</td>
+		    </tr>
+		    <tr class="collapsed" bgcolor="white" id="SummaryIssueType0GUID1">
+		        <td colspan="3">
+		            <table cellpadding="2" cellspacing="0" width="100%" border="1" bordercolor="white" class="content">
+		                <tr class="row">
+		                    <td colspan="3" width="97%" class="SummaryFileContent">
+		                        <IMG alt="選択範囲の展開/縮小" class="expandable" height="11" onclick=changepic() src="_UpgradeReport_Files/UpgradeReport_Plus.gif" width="9" child="SummaryIssueType0GUID1File0">
+		                        &nbsp;clsDBDirect.cls
+		                    </td>
+		                    <td class="SummaryFileCount">1</td>
+		                </tr>
+		                <tr class="collapsed" id="SummaryIssueType0GUID1File0" bgcolor="#ffffff">
+		                    <td colspan="4">
+		                    <table cellpadding="2" cellspacing="0" width="97%" border="1" bordercolor="#dcdcdc" class="content">
+		                        <tr bgcolor="#ffffff">
+		                            <td width="10" class="issuehdr">#</td>
+		                            <td nowrap class="issuehdr">場所</td>
+		                            <td nowrap class="issuehdr">オブジェクトの種類</td>
+		                            <td nowrap class="issuehdr">オブジェクト名</td>
+		                            <td nowrap class="issuehdr">プロパティ</td>
+		                            <td nowrap class="issuehdr">説明</td>
+		                        </tr>
+		                        <tr bgcolor="#ffffff">
+		                            <td class="issuecontent">1</td>
+		                            <td class="issuecontent">ConnectADO</td>
+		                            <td class="issuecontent">Screen</td>
+		                            <td class="issuecontent">Screen</td>
+		                            <td class="issuecontent">MousePointer</td>
+		                            <td class="issuecontent"><a href='ms-help://MS.VSCC.v80/dv_commoner/local/redirect.htm?keyword="45116EAB-7060-405E-8ABE-9DBB40DC2E86"'>Screen プロパティ Screen.MousePointer はカスタム マウスポインタをサポートしません。</a></td>
+		                        </tr>
+		                    </table>
+		                    </td>
+		                </tr>
+		                <tr class="row">
+		                    <td colspan="3" width="97%" class="SummaryFileContent">
+		                        <IMG alt="選択範囲の展開/縮小" class="expandable" height="11" onclick=changepic() src="_UpgradeReport_Files/UpgradeReport_Plus.gif" width="9" child="SummaryIssueType0GUID1File1">
+		                        &nbsp;clsDBDirectForRpt.cls
+		                    </td>
+		                    <td class="SummaryFileCount">1</td>
+		                </tr>
+		                <tr class="collapsed" id="SummaryIssueType0GUID1File1" bgcolor="#ffffff">
+		                    <td colspan="4">
+		                    <table cellpadding="2" cellspacing="0" width="97%" border="1" bordercolor="#dcdcdc" class="content">
+		                        <tr bgcolor="#ffffff">
+		                            <td width="10" class="issuehdr">#</td>
+		                            <td nowrap class="issuehdr">場所</td>
+		                            <td nowrap class="issuehdr">オブジェクトの種類</td>
+		                            <td nowrap class="issuehdr">オブジェクト名</td>
+		                            <td nowrap class="issuehdr">プロパティ</td>
+		                            <td nowrap class="issuehdr">説明</td>
+		                        </tr>
+		                        <tr bgcolor="#ffffff">
+		                            <td class="issuecontent">1</td>
+		                            <td class="issuecontent">ConnectADO</td>
+		                            <td class="issuecontent">Screen</td>
+		                            <td class="issuecontent">Screen</td>
+		                            <td class="issuecontent">MousePointer</td>
+		                            <td class="issuecontent"><a href='ms-help://MS.VSCC.v80/dv_commoner/local/redirect.htm?keyword="45116EAB-7060-405E-8ABE-9DBB40DC2E86"'>Screen プロパティ Screen.MousePointer はカスタム マウスポインタをサポートしません。</a></td>
+		                        </tr>
+		                    </table>
+		                    </td>
+		                </tr>
+		                <tr class="row">
+		                    <td colspan="3" width="97%" class="SummaryFileContent">
+		                        <IMG alt="選択範囲の展開/縮小" class="expandable" height="11" onclick=changepic() src="_UpgradeReport_Files/UpgradeReport_Plus.gif" width="9" child="SummaryIssueType0GUID1File2">
+		                        &nbsp;clsOra11DBDirect.cls
+		                    </td>
+		                    <td class="SummaryFileCount">2</td>
+		                </tr>
+		                <tr class="collapsed" id="SummaryIssueType0GUID1File2" bgcolor="#ffffff">
+		                    <td colspan="4">
+		                    <table cellpadding="2" cellspacing="0" width="97%" border="1" bordercolor="#dcdcdc" class="content">
+		                        <tr bgcolor="#ffffff">
+		                            <td width="10" class="issuehdr">#</td>
+		                            <td nowrap class="issuehdr">場所</td>
+		                            <td nowrap class="issuehdr">オブジェクトの種類</td>
+		                            <td nowrap class="issuehdr">オブジェクト名</td>
+		                            <td nowrap class="issuehdr">プロパティ</td>
+		                            <td nowrap class="issuehdr">説明</td>
+		                        </tr>
+		                        <tr bgcolor="#ffffff">
+		                            <td class="issuecontent">1</td>
+		                            <td class="issuecontent">ConnectDb</td>
+		                            <td class="issuecontent">Screen</td>
+		                            <td class="issuecontent">Screen</td>
+		                            <td class="issuecontent">MousePointer</td>
+		                            <td class="issuecontent"><a href='ms-help://MS.VSCC.v80/dv_commoner/local/redirect.htm?keyword="45116EAB-7060-405E-8ABE-9DBB40DC2E86"'>Screen プロパティ Screen.MousePointer はカスタム マウスポインタをサポートしません。</a></td>
+		                        </tr>
+		                        <tr bgcolor="#ffffff">
+		                            <td class="issuecontent">2</td>
+		                            <td class="issuecontent">ConnectDb</td>
+		                            <td class="issuecontent">Screen</td>
+		                            <td class="issuecontent">Screen</td>
+		                            <td class="issuecontent">MousePointer</td>
+		                            <td class="issuecontent"><a href='ms-help://MS.VSCC.v80/dv_commoner/local/redirect.htm?keyword="45116EAB-7060-405E-8ABE-9DBB40DC2E86"'>Screen プロパティ Screen.MousePointer はカスタム マウスポインタをサポートしません。</a></td>
+		                        </tr>
+		                    </table>
+		                    </td>
+		                </tr>
+		            </table>
+		        </td>
+		    </tr>
+		    <tr class="row">
+		        <td class="SummaryIssueContent">
+		            <IMG alt="選択範囲の展開/縮小" class="expandable" height="11" onclick=changepic() src="_UpgradeReport_Files/UpgradeReport_Plus.gif" width="9" child="SummaryIssueType0GUID2">
+		            &nbsp;定数の値を確定することができませんでした
+		        </td>
+		        <td class="SummaryIssueHelp">
+		            <a href='ms-help://MS.VSCC.v80/dv_commoner/local/redirect.htm?keyword="B3B44E51-B5F1-4FD7-AA29-CAD31B71F487"'>このコンテキストに適切である相当の定数を確定できません</a>
+		        </td>
+		        <td class="SummaryCount">4</td>
+		    </tr>
+		    <tr class="collapsed" bgcolor="white" id="SummaryIssueType0GUID2">
+		        <td colspan="3">
+		            <table cellpadding="2" cellspacing="0" width="100%" border="1" bordercolor="white" class="content">
+		                <tr class="row">
+		                    <td colspan="3" width="97%" class="SummaryFileContent">
+		                        <IMG alt="選択範囲の展開/縮小" class="expandable" height="11" onclick=changepic() src="_UpgradeReport_Files/UpgradeReport_Plus.gif" width="9" child="SummaryIssueType0GUID2File0">
+		                        &nbsp;clsDBDirect.cls
+		                    </td>
+		                    <td class="SummaryFileCount">1</td>
+		                </tr>
+		                <tr class="collapsed" id="SummaryIssueType0GUID2File0" bgcolor="#ffffff">
+		                    <td colspan="4">
+		                    <table cellpadding="2" cellspacing="0" width="97%" border="1" bordercolor="#dcdcdc" class="content">
+		                        <tr bgcolor="#ffffff">
+		                            <td width="10" class="issuehdr">#</td>
+		                            <td nowrap class="issuehdr">場所</td>
+		                            <td nowrap class="issuehdr">オブジェクトの種類</td>
+		                            <td nowrap class="issuehdr">オブジェクト名</td>
+		                            <td nowrap class="issuehdr">プロパティ</td>
+		                            <td nowrap class="issuehdr">説明</td>
+		                        </tr>
+		                        <tr bgcolor="#ffffff">
+		                            <td class="issuecontent">1</td>
+		                            <td class="issuecontent">ConnectADO</td>
+		                            <td class="issuecontent">Screen</td>
+		                            <td class="issuecontent">Screen</td>
+		                            <td class="issuecontent">vbNormal</td>
+		                            <td class="issuecontent"><a href='ms-help://MS.VSCC.v80/dv_commoner/local/redirect.htm?keyword="B3B44E51-B5F1-4FD7-AA29-CAD31B71F487"'>vbNormal をアップグレードする定数を決定できません。</a></td>
+		                        </tr>
+		                    </table>
+		                    </td>
+		                </tr>
+		                <tr class="row">
+		                    <td colspan="3" width="97%" class="SummaryFileContent">
+		                        <IMG alt="選択範囲の展開/縮小" class="expandable" height="11" onclick=changepic() src="_UpgradeReport_Files/UpgradeReport_Plus.gif" width="9" child="SummaryIssueType0GUID2File1">
+		                        &nbsp;clsDBDirectForRpt.cls
+		                    </td>
+		                    <td class="SummaryFileCount">1</td>
+		                </tr>
+		                <tr class="collapsed" id="SummaryIssueType0GUID2File1" bgcolor="#ffffff">
+		                    <td colspan="4">
+		                    <table cellpadding="2" cellspacing="0" width="97%" border="1" bordercolor="#dcdcdc" class="content">
+		                        <tr bgcolor="#ffffff">
+		                            <td width="10" class="issuehdr">#</td>
+		                            <td nowrap class="issuehdr">場所</td>
+		                            <td nowrap class="issuehdr">オブジェクトの種類</td>
+		                            <td nowrap class="issuehdr">オブジェクト名</td>
+		                            <td nowrap class="issuehdr">プロパティ</td>
+		                            <td nowrap class="issuehdr">説明</td>
+		                        </tr>
+		                        <tr bgcolor="#ffffff">
+		                            <td class="issuecontent">1</td>
+		                            <td class="issuecontent">ConnectADO</td>
+		                            <td class="issuecontent">Screen</td>
+		                            <td class="issuecontent">Screen</td>
+		                            <td class="issuecontent">vbNormal</td>
+		                            <td class="issuecontent"><a href='ms-help://MS.VSCC.v80/dv_commoner/local/redirect.htm?keyword="B3B44E51-B5F1-4FD7-AA29-CAD31B71F487"'>vbNormal をアップグレードする定数を決定できません。</a></td>
+		                        </tr>
+		                    </table>
+		                    </td>
+		                </tr>
+		                <tr class="row">
+		                    <td colspan="3" width="97%" class="SummaryFileContent">
+		                        <IMG alt="選択範囲の展開/縮小" class="expandable" height="11" onclick=changepic() src="_UpgradeReport_Files/UpgradeReport_Plus.gif" width="9" child="SummaryIssueType0GUID2File2">
+		                        &nbsp;clsOra11DBDirect.cls
+		                    </td>
+		                    <td class="SummaryFileCount">2</td>
+		                </tr>
+		                <tr class="collapsed" id="SummaryIssueType0GUID2File2" bgcolor="#ffffff">
+		                    <td colspan="4">
+		                    <table cellpadding="2" cellspacing="0" width="97%" border="1" bordercolor="#dcdcdc" class="content">
+		                        <tr bgcolor="#ffffff">
+		                            <td width="10" class="issuehdr">#</td>
+		                            <td nowrap class="issuehdr">場所</td>
+		                            <td nowrap class="issuehdr">オブジェクトの種類</td>
+		                            <td nowrap class="issuehdr">オブジェクト名</td>
+		                            <td nowrap class="issuehdr">プロパティ</td>
+		                            <td nowrap class="issuehdr">説明</td>
+		                        </tr>
+		                        <tr bgcolor="#ffffff">
+		                            <td class="issuecontent">1</td>
+		                            <td class="issuecontent">ConnectDb</td>
+		                            <td class="issuecontent">Screen</td>
+		                            <td class="issuecontent">Screen</td>
+		                            <td class="issuecontent">vbNormal</td>
+		                            <td class="issuecontent"><a href='ms-help://MS.VSCC.v80/dv_commoner/local/redirect.htm?keyword="B3B44E51-B5F1-4FD7-AA29-CAD31B71F487"'>vbNormal をアップグレードする定数を決定できません。</a></td>
+		                        </tr>
+		                        <tr bgcolor="#ffffff">
+		                            <td class="issuecontent">2</td>
+		                            <td class="issuecontent">ConnectDb</td>
+		                            <td class="issuecontent">Screen</td>
+		                            <td class="issuecontent">Screen</td>
+		                            <td class="issuecontent">vbNormal</td>
+		                            <td class="issuecontent"><a href='ms-help://MS.VSCC.v80/dv_commoner/local/redirect.htm?keyword="B3B44E51-B5F1-4FD7-AA29-CAD31B71F487"'>vbNormal をアップグレードする定数を決定できません。</a></td>
+		                        </tr>
+		                    </table>
+		                    </td>
+		                </tr>
+		            </table>
+		        </td>
+		    </tr>
+		            </table>
+		        </td>
+		    </tr>
+		    <tr class="row">
+		    <td class="SummaryIssueTypeContent">
+		        <IMG alt="選択範囲の展開/縮小" class="expanded" height="11" onclick=changepic() src="_UpgradeReport_Files/UpgradeReport_Minus.gif" width="9" child="SummaryIssueType1">
+		        &nbsp;警告
+		    </td>
+		    <td class="SummaryIssueTypeHelp">
+		        アプリケーションの実行時に予期しない結果を発生させる可能性のある相違点があります。目的どおりに機能していることを確認するために、アプリケーションを十分にテストしてください。
+		    </td>
+		    <td class="SummaryIssueTypeCount">
+		        22
+		    </td>
+		    </tr>
+		    <tr class="expanded" bgcolor="white" id="SummaryIssueType1">
+		        <td colspan="3">
+		            <table cellpadding="2" cellspacing="0" width="100%" border="1" bordercolor="white" class="content">
+		    <tr class="row">
+		        <td class="SummaryIssueContent">
+		            <IMG alt="選択範囲の展開/縮小" class="expandable" height="11" onclick=changepic() src="_UpgradeReport_Files/UpgradeReport_Plus.gif" width="9" child="SummaryIssueType1GUID0">
+		            &nbsp;プロジェクトで ADODB を使用していることが検出されました
+		        </td>
+		        <td class="SummaryIssueHelp">
+		            <a href='ms-help://MS.VSCC.v80/dv_commoner/local/redirect.htm?keyword="48A49793-4B36-455A-A684-D0D50E2E42B3"'>ADODB の使用に関する詳細</a>
+		        </td>
+		        <td class="SummaryCount">1</td>
+		    </tr>
+		    <tr class="collapsed" bgcolor="white" id="SummaryIssueType1GUID0">
+		        <td colspan="3">
+		            <table cellpadding="2" cellspacing="0" width="100%" border="1" bordercolor="white" class="content">
+		                <tr class="row">
+		                    <td colspan="3" width="97%" class="SummaryFileContent">
+		                        <IMG alt="選択範囲の展開/縮小" class="expandable" height="11" onclick=changepic() src="_UpgradeReport_Files/UpgradeReport_Plus.gif" width="9" child="SummaryIssueType1GUID0File0">
+		                        &nbsp;(グローバルな問題)
+		                    </td>
+		                    <td class="SummaryFileCount">1</td>
+		                </tr>
+		                <tr class="collapsed" id="SummaryIssueType1GUID0File0" bgcolor="#ffffff">
+		                    <td colspan="4">
+		                    <table cellpadding="2" cellspacing="0" width="97%" border="1" bordercolor="#dcdcdc" class="content">
+		                        <tr bgcolor="#ffffff">
+		                            <td width="10" class="issuehdr">#</td>
+		                            <td nowrap class="issuehdr">場所</td>
+		                            <td nowrap class="issuehdr">オブジェクトの種類</td>
+		                            <td nowrap class="issuehdr">オブジェクト名</td>
+		                            <td nowrap class="issuehdr">プロパティ</td>
+		                            <td nowrap class="issuehdr">説明</td>
+		                        </tr>
+		                        <tr bgcolor="#ffffff">
+		                            <td class="issuecontent">1</td>
+		                            <td class="issuecontent"></td>
+		                            <td class="issuecontent"></td>
+		                            <td class="issuecontent"></td>
+		                            <td class="issuecontent"></td>
+		                            <td class="issuecontent"><a href='ms-help://MS.VSCC.v80/dv_commoner/local/redirect.htm?keyword="48A49793-4B36-455A-A684-D0D50E2E42B3"'>アップグレードされた VB.NET アプリケーションには ADODB を使用します。</a></td>
+		                        </tr>
+		                    </table>
+		                    </td>
+		                </tr>
+		            </table>
+		        </td>
+		    </tr>
+		    <tr class="row">
+		        <td class="SummaryIssueContent">
+		            <IMG alt="選択範囲の展開/縮小" class="expandable" height="11" onclick=changepic() src="_UpgradeReport_Files/UpgradeReport_Plus.gif" width="9" child="SummaryIssueType1GUID1">
+		            &nbsp;一部のプロジェクト アイテムはアップグレードされませんでした
+		        </td>
+		        <td class="SummaryIssueHelp">
+		            <a href='ms-help://MS.VSCC.v80/dv_commoner/local/redirect.htm?keyword="8E17D925-FAA8-4EF2-9E5F-D59539C1A10D"'>プロジェクト アイテムはアップグレードされませんでした</a>
+		        </td>
+		        <td class="SummaryCount">1</td>
+		    </tr>
+		    <tr class="collapsed" bgcolor="white" id="SummaryIssueType1GUID1">
+		        <td colspan="3">
+		            <table cellpadding="2" cellspacing="0" width="100%" border="1" bordercolor="white" class="content">
+		                <tr class="row">
+		                    <td colspan="3" width="97%" class="SummaryFileContent">
+		                        <IMG alt="選択範囲の展開/縮小" class="expandable" height="11" onclick=changepic() src="_UpgradeReport_Files/UpgradeReport_Plus.gif" width="9" child="SummaryIssueType1GUID1File0">
+		                        &nbsp;(グローバルな問題)
+		                    </td>
+		                    <td class="SummaryFileCount">1</td>
+		                </tr>
+		                <tr class="collapsed" id="SummaryIssueType1GUID1File0" bgcolor="#ffffff">
+		                    <td colspan="4">
+		                    <table cellpadding="2" cellspacing="0" width="97%" border="1" bordercolor="#dcdcdc" class="content">
+		                        <tr bgcolor="#ffffff">
+		                            <td width="10" class="issuehdr">#</td>
+		                            <td nowrap class="issuehdr">場所</td>
+		                            <td nowrap class="issuehdr">オブジェクトの種類</td>
+		                            <td nowrap class="issuehdr">オブジェクト名</td>
+		                            <td nowrap class="issuehdr">プロパティ</td>
+		                            <td nowrap class="issuehdr">説明</td>
+		                        </tr>
+		                        <tr bgcolor="#ffffff">
+		                            <td class="issuecontent">1</td>
+		                            <td class="issuecontent"></td>
+		                            <td class="issuecontent"></td>
+		                            <td class="issuecontent"></td>
+		                            <td class="issuecontent"></td>
+		                            <td class="issuecontent"><a href='ms-help://MS.VSCC.v80/dv_commoner/local/redirect.htm?keyword="8E17D925-FAA8-4EF2-9E5F-D59539C1A10D"'>ActiveX デザイナ rptTd_Material.Dsr はアップグレードされませんでした。</a></td>
+		                        </tr>
+		                    </table>
+		                    </td>
+		                </tr>
+		            </table>
+		        </td>
+		    </tr>
+		    <tr class="row">
+		        <td class="SummaryIssueContent">
+		            <IMG alt="選択範囲の展開/縮小" class="expandable" height="11" onclick=changepic() src="_UpgradeReport_Files/UpgradeReport_Plus.gif" width="9" child="SummaryIssueType1GUID2">
+		            &nbsp;Sub Main が実行を終えるとき、アプリケーションは終了します
+		        </td>
+		        <td class="SummaryIssueHelp">
+		            <a href='ms-help://MS.VSCC.v80/dv_commoner/local/redirect.htm?keyword="E08DDC71-66BA-424F-A612-80AF11498FF8"'>Sub Main() が完了したときにアプリケーションは終了します</a>
+		        </td>
+		        <td class="SummaryCount">1</td>
+		    </tr>
+		    <tr class="collapsed" bgcolor="white" id="SummaryIssueType1GUID2">
+		        <td colspan="3">
+		            <table cellpadding="2" cellspacing="0" width="100%" border="1" bordercolor="white" class="content">
+		                <tr class="row">
+		                    <td colspan="3" width="97%" class="SummaryFileContent">
+		                        <IMG alt="選択範囲の展開/縮小" class="expandable" height="11" onclick=changepic() src="_UpgradeReport_Files/UpgradeReport_Plus.gif" width="9" child="SummaryIssueType1GUID2File0">
+		                        &nbsp;modMain.bas
+		                    </td>
+		                    <td class="SummaryFileCount">1</td>
+		                </tr>
+		                <tr class="collapsed" id="SummaryIssueType1GUID2File0" bgcolor="#ffffff">
+		                    <td colspan="4">
+		                    <table cellpadding="2" cellspacing="0" width="97%" border="1" bordercolor="#dcdcdc" class="content">
+		                        <tr bgcolor="#ffffff">
+		                            <td width="10" class="issuehdr">#</td>
+		                            <td nowrap class="issuehdr">場所</td>
+		                            <td nowrap class="issuehdr">オブジェクトの種類</td>
+		                            <td nowrap class="issuehdr">オブジェクト名</td>
+		                            <td nowrap class="issuehdr">プロパティ</td>
+		                            <td nowrap class="issuehdr">説明</td>
+		                        </tr>
+		                        <tr bgcolor="#ffffff">
+		                            <td class="issuecontent">1</td>
+		                            <td class="issuecontent">(Declarations)</td>
+		                            <td class="issuecontent"></td>
+		                            <td class="issuecontent"></td>
+		                            <td class="issuecontent"></td>
+		                            <td class="issuecontent"><a href='ms-help://MS.VSCC.v80/dv_commoner/local/redirect.htm?keyword="E08DDC71-66BA-424F-A612-80AF11498FF8"'>Sub Main() が完了したときにアプリケーションは終了します。</a></td>
+		                        </tr>
+		                    </table>
+		                    </td>
+		                </tr>
+		            </table>
+		        </td>
+		    </tr>
+		    <tr class="row">
+		        <td class="SummaryIssueContent">
+		            <IMG alt="選択範囲の展開/縮小" class="expandable" height="11" onclick=changepic() src="_UpgradeReport_Files/UpgradeReport_Plus.gif" width="9" child="SummaryIssueType1GUID3">
+		            &nbsp;一部の関数への変更は、予期しない動作を伴う可能性があります
+		        </td>
+		        <td class="SummaryIssueHelp">
+		            <a href='ms-help://MS.VSCC.v80/dv_commoner/local/redirect.htm?keyword="9B7D5ADD-D8FE-4819-A36C-6DEDAF088CC7"'>Function には新しい動作が含まれます</a>
+		        </td>
+		        <td class="SummaryCount">2</td>
+		    </tr>
+		    <tr class="collapsed" bgcolor="white" id="SummaryIssueType1GUID3">
+		        <td colspan="3">
+		            <table cellpadding="2" cellspacing="0" width="100%" border="1" bordercolor="white" class="content">
+		                <tr class="row">
+		                    <td colspan="3" width="97%" class="SummaryFileContent">
+		                        <IMG alt="選択範囲の展開/縮小" class="expandable" height="11" onclick=changepic() src="_UpgradeReport_Files/UpgradeReport_Plus.gif" width="9" child="SummaryIssueType1GUID3File0">
+		                        &nbsp;clsIniFile.cls
+		                    </td>
+		                    <td class="SummaryFileCount">2</td>
+		                </tr>
+		                <tr class="collapsed" id="SummaryIssueType1GUID3File0" bgcolor="#ffffff">
+		                    <td colspan="4">
+		                    <table cellpadding="2" cellspacing="0" width="97%" border="1" bordercolor="#dcdcdc" class="content">
+		                        <tr bgcolor="#ffffff">
+		                            <td width="10" class="issuehdr">#</td>
+		                            <td nowrap class="issuehdr">場所</td>
+		                            <td nowrap class="issuehdr">オブジェクトの種類</td>
+		                            <td nowrap class="issuehdr">オブジェクト名</td>
+		                            <td nowrap class="issuehdr">プロパティ</td>
+		                            <td nowrap class="issuehdr">説明</td>
+		                        </tr>
+		                        <tr bgcolor="#ffffff">
+		                            <td class="issuecontent">1</td>
+		                            <td class="issuecontent">Exists</td>
+		                            <td class="issuecontent"></td>
+		                            <td class="issuecontent"></td>
+		                            <td class="issuecontent">Dir</td>
+		                            <td class="issuecontent"><a href='ms-help://MS.VSCC.v80/dv_commoner/local/redirect.htm?keyword="9B7D5ADD-D8FE-4819-A36C-6DEDAF088CC7"'>Dir に新しい動作が指定されています。</a></td>
+		                        </tr>
+		                        <tr bgcolor="#ffffff">
+		                            <td class="issuecontent">2</td>
+		                            <td class="issuecontent">GetLongPathName</td>
+		                            <td class="issuecontent"></td>
+		                            <td class="issuecontent"></td>
+		                            <td class="issuecontent">Dir</td>
+		                            <td class="issuecontent"><a href='ms-help://MS.VSCC.v80/dv_commoner/local/redirect.htm?keyword="9B7D5ADD-D8FE-4819-A36C-6DEDAF088CC7"'>Dir に新しい動作が指定されています。</a></td>
+		                        </tr>
+		                    </table>
+		                    </td>
+		                </tr>
+		            </table>
+		        </td>
+		    </tr>
+		    <tr class="row">
+		        <td class="SummaryIssueContent">
+		            <IMG alt="選択範囲の展開/縮小" class="expandable" height="11" onclick=changepic() src="_UpgradeReport_Files/UpgradeReport_Plus.gif" width="9" child="SummaryIssueType1GUID4">
+		            &nbsp;Null には新しい動作が含まれます
+		        </td>
+		        <td class="SummaryIssueHelp">
+		            <a href='ms-help://MS.VSCC.v80/dv_commoner/local/redirect.htm?keyword="2EED02CB-5C0E-4DC1-AE94-4FAA3A30F51A"'>Null の動作は変更されています</a>
+		        </td>
+		        <td class="SummaryCount">3</td>
+		    </tr>
+		    <tr class="collapsed" bgcolor="white" id="SummaryIssueType1GUID4">
+		        <td colspan="3">
+		            <table cellpadding="2" cellspacing="0" width="100%" border="1" bordercolor="white" class="content">
+		                <tr class="row">
+		                    <td colspan="3" width="97%" class="SummaryFileContent">
+		                        <IMG alt="選択範囲の展開/縮小" class="expandable" height="11" onclick=changepic() src="_UpgradeReport_Files/UpgradeReport_Plus.gif" width="9" child="SummaryIssueType1GUID4File0">
+		                        &nbsp;clsDBDirect.cls
+		                    </td>
+		                    <td class="SummaryFileCount">1</td>
+		                </tr>
+		                <tr class="collapsed" id="SummaryIssueType1GUID4File0" bgcolor="#ffffff">
+		                    <td colspan="4">
+		                    <table cellpadding="2" cellspacing="0" width="97%" border="1" bordercolor="#dcdcdc" class="content">
+		                        <tr bgcolor="#ffffff">
+		                            <td width="10" class="issuehdr">#</td>
+		                            <td nowrap class="issuehdr">場所</td>
+		                            <td nowrap class="issuehdr">オブジェクトの種類</td>
+		                            <td nowrap class="issuehdr">オブジェクト名</td>
+		                            <td nowrap class="issuehdr">プロパティ</td>
+		                            <td nowrap class="issuehdr">説明</td>
+		                        </tr>
+		                        <tr bgcolor="#ffffff">
+		                            <td class="issuecontent">1</td>
+		                            <td class="issuecontent">GetNextPKey</td>
+		                            <td class="issuecontent"></td>
+		                            <td class="issuecontent"></td>
+		                            <td class="issuecontent">IsNull</td>
+		                            <td class="issuecontent"><a href='ms-help://MS.VSCC.v80/dv_commoner/local/redirect.htm?keyword="2EED02CB-5C0E-4DC1-AE94-4FAA3A30F51A"'>Null/IsNull() の使用が見つかりました。</a></td>
+		                        </tr>
+		                    </table>
+		                    </td>
+		                </tr>
+		                <tr class="row">
+		                    <td colspan="3" width="97%" class="SummaryFileContent">
+		                        <IMG alt="選択範囲の展開/縮小" class="expandable" height="11" onclick=changepic() src="_UpgradeReport_Files/UpgradeReport_Plus.gif" width="9" child="SummaryIssueType1GUID4File1">
+		                        &nbsp;clsDBDirectForRpt.cls
+		                    </td>
+		                    <td class="SummaryFileCount">1</td>
+		                </tr>
+		                <tr class="collapsed" id="SummaryIssueType1GUID4File1" bgcolor="#ffffff">
+		                    <td colspan="4">
+		                    <table cellpadding="2" cellspacing="0" width="97%" border="1" bordercolor="#dcdcdc" class="content">
+		                        <tr bgcolor="#ffffff">
+		                            <td width="10" class="issuehdr">#</td>
+		                            <td nowrap class="issuehdr">場所</td>
+		                            <td nowrap class="issuehdr">オブジェクトの種類</td>
+		                            <td nowrap class="issuehdr">オブジェクト名</td>
+		                            <td nowrap class="issuehdr">プロパティ</td>
+		                            <td nowrap class="issuehdr">説明</td>
+		                        </tr>
+		                        <tr bgcolor="#ffffff">
+		                            <td class="issuecontent">1</td>
+		                            <td class="issuecontent">GetNextPKey</td>
+		                            <td class="issuecontent"></td>
+		                            <td class="issuecontent"></td>
+		                            <td class="issuecontent">IsNull</td>
+		                            <td class="issuecontent"><a href='ms-help://MS.VSCC.v80/dv_commoner/local/redirect.htm?keyword="2EED02CB-5C0E-4DC1-AE94-4FAA3A30F51A"'>Null/IsNull() の使用が見つかりました。</a></td>
+		                        </tr>
+		                    </table>
+		                    </td>
+		                </tr>
+		                <tr class="row">
+		                    <td colspan="3" width="97%" class="SummaryFileContent">
+		                        <IMG alt="選択範囲の展開/縮小" class="expandable" height="11" onclick=changepic() src="_UpgradeReport_Files/UpgradeReport_Plus.gif" width="9" child="SummaryIssueType1GUID4File2">
+		                        &nbsp;clsOra11DBDirect.cls
+		                    </td>
+		                    <td class="SummaryFileCount">1</td>
+		                </tr>
+		                <tr class="collapsed" id="SummaryIssueType1GUID4File2" bgcolor="#ffffff">
+		                    <td colspan="4">
+		                    <table cellpadding="2" cellspacing="0" width="97%" border="1" bordercolor="#dcdcdc" class="content">
+		                        <tr bgcolor="#ffffff">
+		                            <td width="10" class="issuehdr">#</td>
+		                            <td nowrap class="issuehdr">場所</td>
+		                            <td nowrap class="issuehdr">オブジェクトの種類</td>
+		                            <td nowrap class="issuehdr">オブジェクト名</td>
+		                            <td nowrap class="issuehdr">プロパティ</td>
+		                            <td nowrap class="issuehdr">説明</td>
+		                        </tr>
+		                        <tr bgcolor="#ffffff">
+		                            <td class="issuecontent">1</td>
+		                            <td class="issuecontent">GetNextPKey</td>
+		                            <td class="issuecontent"></td>
+		                            <td class="issuecontent"></td>
+		                            <td class="issuecontent">IsNull</td>
+		                            <td class="issuecontent"><a href='ms-help://MS.VSCC.v80/dv_commoner/local/redirect.htm?keyword="2EED02CB-5C0E-4DC1-AE94-4FAA3A30F51A"'>Null/IsNull() の使用が見つかりました。</a></td>
+		                        </tr>
+		                    </table>
+		                    </td>
+		                </tr>
+		            </table>
+		        </td>
+		    </tr>
+		    <tr class="row">
+		        <td class="SummaryIssueContent">
+		            <IMG alt="選択範囲の展開/縮小" class="expandable" height="11" onclick=changepic() src="_UpgradeReport_Files/UpgradeReport_Plus.gif" width="9" child="SummaryIssueType1GUID5">
+		            &nbsp;一部のプロパティおよびメソッドには新しい動作が伴います
+		        </td>
+		        <td class="SummaryIssueHelp">
+		            <a href='ms-help://MS.VSCC.v80/dv_commoner/local/redirect.htm?keyword="6BA9B8D2-2A32-4B6E-8D36-44949974A5B4"'>プロパティまたはメソッドには新しい動作が含まれます</a>
+		        </td>
+		        <td class="SummaryCount">7</td>
+		    </tr>
+		    <tr class="collapsed" bgcolor="white" id="SummaryIssueType1GUID5">
+		        <td colspan="3">
+		            <table cellpadding="2" cellspacing="0" width="100%" border="1" bordercolor="white" class="content">
+		                <tr class="row">
+		                    <td colspan="3" width="97%" class="SummaryFileContent">
+		                        <IMG alt="選択範囲の展開/縮小" class="expandable" height="11" onclick=changepic() src="_UpgradeReport_Files/UpgradeReport_Plus.gif" width="9" child="SummaryIssueType1GUID5File0">
+		                        &nbsp;clsDBDirect.cls
+		                    </td>
+		                    <td class="SummaryFileCount">1</td>
+		                </tr>
+		                <tr class="collapsed" id="SummaryIssueType1GUID5File0" bgcolor="#ffffff">
+		                    <td colspan="4">
+		                    <table cellpadding="2" cellspacing="0" width="97%" border="1" bordercolor="#dcdcdc" class="content">
+		                        <tr bgcolor="#ffffff">
+		                            <td width="10" class="issuehdr">#</td>
+		                            <td nowrap class="issuehdr">場所</td>
+		                            <td nowrap class="issuehdr">オブジェクトの種類</td>
+		                            <td nowrap class="issuehdr">オブジェクト名</td>
+		                            <td nowrap class="issuehdr">プロパティ</td>
+		                            <td nowrap class="issuehdr">説明</td>
+		                        </tr>
+		                        <tr bgcolor="#ffffff">
+		                            <td class="issuecontent">1</td>
+		                            <td class="issuecontent">ConnectADO</td>
+		                            <td class="issuecontent">Screen</td>
+		                            <td class="issuecontent">Screen</td>
+		                            <td class="issuecontent">MousePointer</td>
+		                            <td class="issuecontent"><a href='ms-help://MS.VSCC.v80/dv_commoner/local/redirect.htm?keyword="6BA9B8D2-2A32-4B6E-8D36-44949974A5B4"'>Screen プロパティ Screen.MousePointer には新しい動作が含まれます。</a></td>
+		                        </tr>
+		                    </table>
+		                    </td>
+		                </tr>
+		                <tr class="row">
+		                    <td colspan="3" width="97%" class="SummaryFileContent">
+		                        <IMG alt="選択範囲の展開/縮小" class="expandable" height="11" onclick=changepic() src="_UpgradeReport_Files/UpgradeReport_Plus.gif" width="9" child="SummaryIssueType1GUID5File1">
+		                        &nbsp;clsDBDirectForRpt.cls
+		                    </td>
+		                    <td class="SummaryFileCount">1</td>
+		                </tr>
+		                <tr class="collapsed" id="SummaryIssueType1GUID5File1" bgcolor="#ffffff">
+		                    <td colspan="4">
+		                    <table cellpadding="2" cellspacing="0" width="97%" border="1" bordercolor="#dcdcdc" class="content">
+		                        <tr bgcolor="#ffffff">
+		                            <td width="10" class="issuehdr">#</td>
+		                            <td nowrap class="issuehdr">場所</td>
+		                            <td nowrap class="issuehdr">オブジェクトの種類</td>
+		                            <td nowrap class="issuehdr">オブジェクト名</td>
+		                            <td nowrap class="issuehdr">プロパティ</td>
+		                            <td nowrap class="issuehdr">説明</td>
+		                        </tr>
+		                        <tr bgcolor="#ffffff">
+		                            <td class="issuecontent">1</td>
+		                            <td class="issuecontent">ConnectADO</td>
+		                            <td class="issuecontent">Screen</td>
+		                            <td class="issuecontent">Screen</td>
+		                            <td class="issuecontent">MousePointer</td>
+		                            <td class="issuecontent"><a href='ms-help://MS.VSCC.v80/dv_commoner/local/redirect.htm?keyword="6BA9B8D2-2A32-4B6E-8D36-44949974A5B4"'>Screen プロパティ Screen.MousePointer には新しい動作が含まれます。</a></td>
+		                        </tr>
+		                    </table>
+		                    </td>
+		                </tr>
+		                <tr class="row">
+		                    <td colspan="3" width="97%" class="SummaryFileContent">
+		                        <IMG alt="選択範囲の展開/縮小" class="expandable" height="11" onclick=changepic() src="_UpgradeReport_Files/UpgradeReport_Plus.gif" width="9" child="SummaryIssueType1GUID5File2">
+		                        &nbsp;clsIniFile.cls
+		                    </td>
+		                    <td class="SummaryFileCount">2</td>
+		                </tr>
+		                <tr class="collapsed" id="SummaryIssueType1GUID5File2" bgcolor="#ffffff">
+		                    <td colspan="4">
+		                    <table cellpadding="2" cellspacing="0" width="97%" border="1" bordercolor="#dcdcdc" class="content">
+		                        <tr bgcolor="#ffffff">
+		                            <td width="10" class="issuehdr">#</td>
+		                            <td nowrap class="issuehdr">場所</td>
+		                            <td nowrap class="issuehdr">オブジェクトの種類</td>
+		                            <td nowrap class="issuehdr">オブジェクト名</td>
+		                            <td nowrap class="issuehdr">プロパティ</td>
+		                            <td nowrap class="issuehdr">説明</td>
+		                        </tr>
+		                        <tr bgcolor="#ffffff">
+		                            <td class="issuecontent">1</td>
+		                            <td class="issuecontent">Class_Initialize</td>
+		                            <td class="issuecontent">App</td>
+		                            <td class="issuecontent">App</td>
+		                            <td class="issuecontent">EXEName</td>
+		                            <td class="issuecontent"><a href='ms-help://MS.VSCC.v80/dv_commoner/local/redirect.htm?keyword="6BA9B8D2-2A32-4B6E-8D36-44949974A5B4"'>App プロパティ App.EXEName には新しい動作が含まれます。</a></td>
+		                        </tr>
+		                        <tr bgcolor="#ffffff">
+		                            <td class="issuecontent">2</td>
+		                            <td class="issuecontent">Class_Initialize</td>
+		                            <td class="issuecontent">App</td>
+		                            <td class="issuecontent">App</td>
+		                            <td class="issuecontent">EXEName</td>
+		                            <td class="issuecontent"><a href='ms-help://MS.VSCC.v80/dv_commoner/local/redirect.htm?keyword="6BA9B8D2-2A32-4B6E-8D36-44949974A5B4"'>App プロパティ App.EXEName には新しい動作が含まれます。</a></td>
+		                        </tr>
+		                    </table>
+		                    </td>
+		                </tr>
+		                <tr class="row">
+		                    <td colspan="3" width="97%" class="SummaryFileContent">
+		                        <IMG alt="選択範囲の展開/縮小" class="expandable" height="11" onclick=changepic() src="_UpgradeReport_Files/UpgradeReport_Plus.gif" width="9" child="SummaryIssueType1GUID5File3">
+		                        &nbsp;clsOra11DBDirect.cls
+		                    </td>
+		                    <td class="SummaryFileCount">3</td>
+		                </tr>
+		                <tr class="collapsed" id="SummaryIssueType1GUID5File3" bgcolor="#ffffff">
+		                    <td colspan="4">
+		                    <table cellpadding="2" cellspacing="0" width="97%" border="1" bordercolor="#dcdcdc" class="content">
+		                        <tr bgcolor="#ffffff">
+		                            <td width="10" class="issuehdr">#</td>
+		                            <td nowrap class="issuehdr">場所</td>
+		                            <td nowrap class="issuehdr">オブジェクトの種類</td>
+		                            <td nowrap class="issuehdr">オブジェクト名</td>
+		                            <td nowrap class="issuehdr">プロパティ</td>
+		                            <td nowrap class="issuehdr">説明</td>
+		                        </tr>
+		                        <tr bgcolor="#ffffff">
+		                            <td class="issuecontent">1</td>
+		                            <td class="issuecontent">ConnectDb</td>
+		                            <td class="issuecontent">Screen</td>
+		                            <td class="issuecontent">Screen</td>
+		                            <td class="issuecontent">MousePointer</td>
+		                            <td class="issuecontent"><a href='ms-help://MS.VSCC.v80/dv_commoner/local/redirect.htm?keyword="6BA9B8D2-2A32-4B6E-8D36-44949974A5B4"'>Screen プロパティ Screen.MousePointer には新しい動作が含まれます。</a></td>
+		                        </tr>
+		                        <tr bgcolor="#ffffff">
+		                            <td class="issuecontent">2</td>
+		                            <td class="issuecontent">ConnectDb</td>
+		                            <td class="issuecontent">Screen</td>
+		                            <td class="issuecontent">Screen</td>
+		                            <td class="issuecontent">MousePointer</td>
+		                            <td class="issuecontent"><a href='ms-help://MS.VSCC.v80/dv_commoner/local/redirect.htm?keyword="6BA9B8D2-2A32-4B6E-8D36-44949974A5B4"'>Screen プロパティ Screen.MousePointer には新しい動作が含まれます。</a></td>
+		                        </tr>
+		                        <tr bgcolor="#ffffff">
+		                            <td class="issuecontent">3</td>
+		                            <td class="issuecontent">ConnectDb</td>
+		                            <td class="issuecontent">Screen</td>
+		                            <td class="issuecontent">Screen</td>
+		                            <td class="issuecontent">MousePointer</td>
+		                            <td class="issuecontent"><a href='ms-help://MS.VSCC.v80/dv_commoner/local/redirect.htm?keyword="6BA9B8D2-2A32-4B6E-8D36-44949974A5B4"'>Screen プロパティ Screen.MousePointer には新しい動作が含まれます。</a></td>
+		                        </tr>
+		                    </table>
+		                    </td>
+		                </tr>
+		            </table>
+		        </td>
+		    </tr>
+		    <tr class="row">
+		        <td class="SummaryIssueContent">
+		            <IMG alt="選択範囲の展開/縮小" class="expandable" height="11" onclick=changepic() src="_UpgradeReport_Files/UpgradeReport_Plus.gif" width="9" child="SummaryIssueType1GUID6">
+		            &nbsp;遅延バインディングの既定のプロパティ参照の一部を解決できませんでした
+		        </td>
+		        <td class="SummaryIssueHelp">
+		            <a href='ms-help://MS.VSCC.v80/dv_commoner/local/redirect.htm?keyword="6A50421D-15FE-4896-8A1B-2EC21E9037B2"'>遅延バインディングの既定のプロパティ参照を解決できませんでした</a>
+		        </td>
+		        <td class="SummaryCount">7</td>
+		    </tr>
+		    <tr class="collapsed" bgcolor="white" id="SummaryIssueType1GUID6">
+		        <td colspan="3">
+		            <table cellpadding="2" cellspacing="0" width="100%" border="1" bordercolor="white" class="content">
+		                <tr class="row">
+		                    <td colspan="3" width="97%" class="SummaryFileContent">
+		                        <IMG alt="選択範囲の展開/縮小" class="expandable" height="11" onclick=changepic() src="_UpgradeReport_Files/UpgradeReport_Plus.gif" width="9" child="SummaryIssueType1GUID6File0">
+		                        &nbsp;frmRegistration.frm
+		                    </td>
+		                    <td class="SummaryFileCount">1</td>
+		                </tr>
+		                <tr class="collapsed" id="SummaryIssueType1GUID6File0" bgcolor="#ffffff">
+		                    <td colspan="4">
+		                    <table cellpadding="2" cellspacing="0" width="97%" border="1" bordercolor="#dcdcdc" class="content">
+		                        <tr bgcolor="#ffffff">
+		                            <td width="10" class="issuehdr">#</td>
+		                            <td nowrap class="issuehdr">場所</td>
+		                            <td nowrap class="issuehdr">オブジェクトの種類</td>
+		                            <td nowrap class="issuehdr">オブジェクト名</td>
+		                            <td nowrap class="issuehdr">プロパティ</td>
+		                            <td nowrap class="issuehdr">説明</td>
+		                        </tr>
+		                        <tr bgcolor="#ffffff">
+		                            <td class="issuecontent">1</td>
+		                            <td class="issuecontent">PrintTdMaterialReport</td>
+		                            <td class="issuecontent"></td>
+		                            <td class="issuecontent"></td>
+		                            <td class="issuecontent"></td>
+		                            <td class="issuecontent"><a href='ms-help://MS.VSCC.v80/dv_commoner/local/redirect.htm?keyword="6A50421D-15FE-4896-8A1B-2EC21E9037B2"'>オブジェクト rptTD_Material.Show の既定プロパティを解決できませんでした。</a></td>
+		                        </tr>
+		                    </table>
+		                    </td>
+		                </tr>
+		                <tr class="row">
+		                    <td colspan="3" width="97%" class="SummaryFileContent">
+		                        <IMG alt="選択範囲の展開/縮小" class="expandable" height="11" onclick=changepic() src="_UpgradeReport_Files/UpgradeReport_Plus.gif" width="9" child="SummaryIssueType1GUID6File1">
+		                        &nbsp;clsOra11DBDirect.cls
+		                    </td>
+		                    <td class="SummaryFileCount">2</td>
+		                </tr>
+		                <tr class="collapsed" id="SummaryIssueType1GUID6File1" bgcolor="#ffffff">
+		                    <td colspan="4">
+		                    <table cellpadding="2" cellspacing="0" width="97%" border="1" bordercolor="#dcdcdc" class="content">
+		                        <tr bgcolor="#ffffff">
+		                            <td width="10" class="issuehdr">#</td>
+		                            <td nowrap class="issuehdr">場所</td>
+		                            <td nowrap class="issuehdr">オブジェクトの種類</td>
+		                            <td nowrap class="issuehdr">オブジェクト名</td>
+		                            <td nowrap class="issuehdr">プロパティ</td>
+		                            <td nowrap class="issuehdr">説明</td>
+		                        </tr>
+		                        <tr bgcolor="#ffffff">
+		                            <td class="issuecontent">1</td>
+		                            <td class="issuecontent">GetNextPKey</td>
+		                            <td class="issuecontent"></td>
+		                            <td class="issuecontent"></td>
+		                            <td class="issuecontent"></td>
+		                            <td class="issuecontent"><a href='ms-help://MS.VSCC.v80/dv_commoner/local/redirect.htm?keyword="6A50421D-15FE-4896-8A1B-2EC21E9037B2"'>オブジェクト rDataset.Fields の既定プロパティを解決できませんでした。</a></td>
+		                        </tr>
+		                        <tr bgcolor="#ffffff">
+		                            <td class="issuecontent">2</td>
+		                            <td class="issuecontent">GetNextPKey</td>
+		                            <td class="issuecontent"></td>
+		                            <td class="issuecontent"></td>
+		                            <td class="issuecontent">IsNull</td>
+		                            <td class="issuecontent"><a href='ms-help://MS.VSCC.v80/dv_commoner/local/redirect.htm?keyword="6A50421D-15FE-4896-8A1B-2EC21E9037B2"'>オブジェクト rDataset.Fields の既定プロパティを解決できませんでした。</a></td>
+		                        </tr>
+		                    </table>
+		                    </td>
+		                </tr>
+		                <tr class="row">
+		                    <td colspan="3" width="97%" class="SummaryFileContent">
+		                        <IMG alt="選択範囲の展開/縮小" class="expandable" height="11" onclick=changepic() src="_UpgradeReport_Files/UpgradeReport_Plus.gif" width="9" child="SummaryIssueType1GUID6File2">
+		                        &nbsp;clsIniFile.cls
+		                    </td>
+		                    <td class="SummaryFileCount">4</td>
+		                </tr>
+		                <tr class="collapsed" id="SummaryIssueType1GUID6File2" bgcolor="#ffffff">
+		                    <td colspan="4">
+		                    <table cellpadding="2" cellspacing="0" width="97%" border="1" bordercolor="#dcdcdc" class="content">
+		                        <tr bgcolor="#ffffff">
+		                            <td width="10" class="issuehdr">#</td>
+		                            <td nowrap class="issuehdr">場所</td>
+		                            <td nowrap class="issuehdr">オブジェクトの種類</td>
+		                            <td nowrap class="issuehdr">オブジェクト名</td>
+		                            <td nowrap class="issuehdr">プロパティ</td>
+		                            <td nowrap class="issuehdr">説明</td>
+		                        </tr>
+		                        <tr bgcolor="#ffffff">
+		                            <td class="issuecontent">1</td>
+		                            <td class="issuecontent">Exists</td>
+		                            <td class="issuecontent"></td>
+		                            <td class="issuecontent"></td>
+		                            <td class="issuecontent"></td>
+		                            <td class="issuecontent"><a href='ms-help://MS.VSCC.v80/dv_commoner/local/redirect.htm?keyword="6A50421D-15FE-4896-8A1B-2EC21E9037B2"'>オブジェクト myERROR.Handler の既定プロパティを解決できませんでした。</a></td>
+		                        </tr>
+		                        <tr bgcolor="#ffffff">
+		                            <td class="issuecontent">2</td>
+		                            <td class="issuecontent">GetSectEntriesEx</td>
+		                            <td class="issuecontent"></td>
+		                            <td class="issuecontent"></td>
+		                            <td class="issuecontent"></td>
+		                            <td class="issuecontent"><a href='ms-help://MS.VSCC.v80/dv_commoner/local/redirect.htm?keyword="6A50421D-15FE-4896-8A1B-2EC21E9037B2"'>オブジェクト GetSectionsEntriesEx の既定プロパティを解決できませんでした。</a></td>
+		                        </tr>
+		                        <tr bgcolor="#ffffff">
+		                            <td class="issuecontent">3</td>
+		                            <td class="issuecontent">ReplaceToken</td>
+		                            <td class="issuecontent"></td>
+		                            <td class="issuecontent"></td>
+		                            <td class="issuecontent"></td>
+		                            <td class="issuecontent"><a href='ms-help://MS.VSCC.v80/dv_commoner/local/redirect.htm?keyword="6A50421D-15FE-4896-8A1B-2EC21E9037B2"'>オブジェクト NewToken の既定プロパティを解決できませんでした。</a></td>
+		                        </tr>
+		                        <tr bgcolor="#ffffff">
+		                            <td class="issuecontent">4</td>
+		                            <td class="issuecontent">Usewinini</td>
+		                            <td class="issuecontent"></td>
+		                            <td class="issuecontent"></td>
+		                            <td class="issuecontent">Right$</td>
+		                            <td class="issuecontent"><a href='ms-help://MS.VSCC.v80/dv_commoner/local/redirect.htm?keyword="6A50421D-15FE-4896-8A1B-2EC21E9037B2"'>オブジェクト mvarFilName の既定プロパティを解決できませんでした。</a></td>
+		                        </tr>
+		                    </table>
+		                    </td>
+		                </tr>
+		            </table>
+		        </td>
+		    </tr>
+		            </table>
+		        </td>
+		    </tr>
+		    <tr class="row">
+		        <td colspan=2 class="content">合計</td>
+		        <td class="SummaryCount">33</td>
+		    </tr>
+		</table>
+		
+		<h2><IMG alt="選択範囲の展開/縮小" class="expandable" height="11" onclick=changepic() src="_UpgradeReport_Files/UpgradeReport_Plus.gif" width="9" child="DetailList"> プロジェクト内各ファイルの詳細</h2>
+		<span id="DetailList" class="collapsed">
+		<table cellpadding="2" cellspacing="0" width="98%" border="1"bordercolor="white" class="infotable">
+			<tr>
+				<td nowrap class="header">新しいファイル名</td>
+				<td nowrap class="header">元のファイル名</td>
+				<td nowrap class="header">ファイルの種類</td>
+				<td nowrap class="header">状態</td>
+				<td nowrap class="header">エラー</td>
+				<td nowrap class="header">警告</td>
+				<td nowrap class="header">問題の総数</td>
+			</tr>
+		<tr class="row">
+			<td class="content"><IMG alt="選択範囲の展開/縮小" class="expandable" height="11"onclick=changepic() src="_UpgradeReport_Files/UpgradeReport_Minus.gif" width="9" child="issue0">&nbsp;(グローバルな問題)</td>
+			<td class="content"></td>
+			<td class="content"></td>
+			<td class="content">
+		</td>	<td class="content">0</td>
+			<td class="content">2</td>
+			<td class="content">2</td>
+		</tr>
+			<tr id="issue0" bgcolor="#ffffff"><td colspan="7">
+				<table width="97%" border="1" bordercolor="#dcdcdc" rules="cols" class="issuetable">
+				<tr><td colspan="7" class="issuetitle">グローバル アップデートの問題:</td></tr><tr><td width="10" class="issuehdr">#</td><td class="issuehdr" nowrap>重大度レベル</td><td class="issuehdr">場所</td><td class="issuehdr">オブジェクトの種類</td><td class="issuehdr">オブジェクト名</td><td class="issuehdr">プロパティ</td><td class="issuehdr">説明</td></tr>
+					<tr><td width="10" class="issuecontent">1</td><td class="issuecontent" nowrap>グローバル警告</td><td class="issuecontent"></td><td class="issuecontent"></td><td class="issuecontent"></td><td class="issuecontent"></td><td class="issuecontent"><a href='ms-help://MS.VSCC.v80/dv_commoner/local/redirect.htm?keyword="48A49793-4B36-455A-A684-D0D50E2E42B3"'>アップグレードされた VB.NET アプリケーションには ADODB を使用します。</a></td></tr>
+					<tr><td width="10" class="issuecontent">2</td><td class="issuecontent" nowrap>グローバル警告</td><td class="issuecontent"></td><td class="issuecontent"></td><td class="issuecontent"></td><td class="issuecontent"></td><td class="issuecontent"><a href='ms-help://MS.VSCC.v80/dv_commoner/local/redirect.htm?keyword="8E17D925-FAA8-4EF2-9E5F-D59539C1A10D"'>ActiveX デザイナ rptTd_Material.Dsr はアップグレードされませんでした。</a></td></tr>
+				</table>
+			</td></tr>
+		<tr class="row">
+			<td class="content"><IMG alt="選択範囲の展開/縮小" class="expandable" height="11"onclick=changepic() src="_UpgradeReport_Files/UpgradeReport_Plus.gif" width="9" child="issue1">&nbsp;clsDBDirect.vb</td>
+			<td class="content">clsDBDirect.cls</td>
+			<td class="content">クラス モジュール</td>
+			<td class="content">
+		アップグレードの問題</td>	<td class="content">2</td>
+			<td class="content">2</td>
+			<td class="content">4</td>
+		</tr>
+			<tr class="collapsed" id="issue1" bgcolor="#ffffff"><td colspan="7">
+				<table width="97%" border="1" bordercolor="#dcdcdc" rules="cols" class="issuetable">
+				<tr><td colspan="7" class="issuetitle">clsDBDirect.cls のアップグレードに関する問題:</td></tr><tr><td width="10" class="issuehdr">#</td><td class="issuehdr" nowrap>重大度レベル</td><td class="issuehdr">場所</td><td class="issuehdr">オブジェクトの種類</td><td class="issuehdr">オブジェクト名</td><td class="issuehdr">プロパティ</td><td class="issuehdr">説明</td></tr>
+					<tr><td width="10" class="issuecontent">1</td><td class="issuecontent" nowrap>コンパイル エラー</td><td class="issuecontent">ConnectADO</td><td class="issuecontent">Screen</td><td class="issuecontent">Screen</td><td class="issuecontent">MousePointer</td><td class="issuecontent"><a href='ms-help://MS.VSCC.v80/dv_commoner/local/redirect.htm?keyword="45116EAB-7060-405E-8ABE-9DBB40DC2E86"'>Screen プロパティ Screen.MousePointer はカスタム マウスポインタをサポートしません。</a></td></tr>
+					<tr><td width="10" class="issuecontent">2</td><td class="issuecontent" nowrap>コンパイル エラー</td><td class="issuecontent">ConnectADO</td><td class="issuecontent">Screen</td><td class="issuecontent">Screen</td><td class="issuecontent">vbNormal</td><td class="issuecontent"><a href='ms-help://MS.VSCC.v80/dv_commoner/local/redirect.htm?keyword="B3B44E51-B5F1-4FD7-AA29-CAD31B71F487"'>vbNormal をアップグレードする定数を決定できません。</a></td></tr>
+					<tr><td width="10" class="issuecontent">3</td><td class="issuecontent" nowrap>実行時の警告</td><td class="issuecontent">ConnectADO</td><td class="issuecontent">Screen</td><td class="issuecontent">Screen</td><td class="issuecontent">MousePointer</td><td class="issuecontent"><a href='ms-help://MS.VSCC.v80/dv_commoner/local/redirect.htm?keyword="6BA9B8D2-2A32-4B6E-8D36-44949974A5B4"'>Screen プロパティ Screen.MousePointer には新しい動作が含まれます。</a></td></tr>
+					<tr><td width="10" class="issuecontent">4</td><td class="issuecontent" nowrap>実行時の警告</td><td class="issuecontent">GetNextPKey</td><td class="issuecontent"></td><td class="issuecontent"></td><td class="issuecontent">IsNull</td><td class="issuecontent"><a href='ms-help://MS.VSCC.v80/dv_commoner/local/redirect.htm?keyword="2EED02CB-5C0E-4DC1-AE94-4FAA3A30F51A"'>Null/IsNull() の使用が見つかりました。</a></td></tr>
+				</table>
+			</td></tr>
+		<tr class="row">
+			<td class="content"><IMG alt="選択範囲の展開/縮小" class="expandable" height="11"onclick=changepic() src="_UpgradeReport_Files/UpgradeReport_Plus.gif" width="9" child="issue2">&nbsp;clsDBDirectForRpt.vb</td>
+			<td class="content">clsDBDirectForRpt.cls</td>
+			<td class="content">クラス モジュール</td>
+			<td class="content">
+		アップグレードの問題</td>	<td class="content">2</td>
+			<td class="content">2</td>
+			<td class="content">4</td>
+		</tr>
+			<tr class="collapsed" id="issue2" bgcolor="#ffffff"><td colspan="7">
+				<table width="97%" border="1" bordercolor="#dcdcdc" rules="cols" class="issuetable">
+				<tr><td colspan="7" class="issuetitle">clsDBDirectForRpt.cls のアップグレードに関する問題:</td></tr><tr><td width="10" class="issuehdr">#</td><td class="issuehdr" nowrap>重大度レベル</td><td class="issuehdr">場所</td><td class="issuehdr">オブジェクトの種類</td><td class="issuehdr">オブジェクト名</td><td class="issuehdr">プロパティ</td><td class="issuehdr">説明</td></tr>
+					<tr><td width="10" class="issuecontent">1</td><td class="issuecontent" nowrap>コンパイル エラー</td><td class="issuecontent">ConnectADO</td><td class="issuecontent">Screen</td><td class="issuecontent">Screen</td><td class="issuecontent">MousePointer</td><td class="issuecontent"><a href='ms-help://MS.VSCC.v80/dv_commoner/local/redirect.htm?keyword="45116EAB-7060-405E-8ABE-9DBB40DC2E86"'>Screen プロパティ Screen.MousePointer はカスタム マウスポインタをサポートしません。</a></td></tr>
+					<tr><td width="10" class="issuecontent">2</td><td class="issuecontent" nowrap>コンパイル エラー</td><td class="issuecontent">ConnectADO</td><td class="issuecontent">Screen</td><td class="issuecontent">Screen</td><td class="issuecontent">vbNormal</td><td class="issuecontent"><a href='ms-help://MS.VSCC.v80/dv_commoner/local/redirect.htm?keyword="B3B44E51-B5F1-4FD7-AA29-CAD31B71F487"'>vbNormal をアップグレードする定数を決定できません。</a></td></tr>
+					<tr><td width="10" class="issuecontent">3</td><td class="issuecontent" nowrap>実行時の警告</td><td class="issuecontent">ConnectADO</td><td class="issuecontent">Screen</td><td class="issuecontent">Screen</td><td class="issuecontent">MousePointer</td><td class="issuecontent"><a href='ms-help://MS.VSCC.v80/dv_commoner/local/redirect.htm?keyword="6BA9B8D2-2A32-4B6E-8D36-44949974A5B4"'>Screen プロパティ Screen.MousePointer には新しい動作が含まれます。</a></td></tr>
+					<tr><td width="10" class="issuecontent">4</td><td class="issuecontent" nowrap>実行時の警告</td><td class="issuecontent">GetNextPKey</td><td class="issuecontent"></td><td class="issuecontent"></td><td class="issuecontent">IsNull</td><td class="issuecontent"><a href='ms-help://MS.VSCC.v80/dv_commoner/local/redirect.htm?keyword="2EED02CB-5C0E-4DC1-AE94-4FAA3A30F51A"'>Null/IsNull() の使用が見つかりました。</a></td></tr>
+				</table>
+			</td></tr>
+		<tr class="row">
+			<td class="content"><IMG alt="選択範囲の展開/縮小" class="expandable" height="11"onclick=changepic() src="_UpgradeReport_Files/UpgradeReport_Plus.gif" width="9" child="issue3">&nbsp;clsIniFile.vb</td>
+			<td class="content">clsIniFile.cls</td>
+			<td class="content">クラス モジュール</td>
+			<td class="content">
+		アップグレードの問題</td>	<td class="content">3</td>
+			<td class="content">8</td>
+			<td class="content">11</td>
+		</tr>
+			<tr class="collapsed" id="issue3" bgcolor="#ffffff"><td colspan="7">
+				<table width="97%" border="1" bordercolor="#dcdcdc" rules="cols" class="issuetable">
+				<tr><td colspan="7" class="issuetitle">clsIniFile.cls のアップグレードに関する問題:</td></tr><tr><td width="10" class="issuehdr">#</td><td class="issuehdr" nowrap>重大度レベル</td><td class="issuehdr">場所</td><td class="issuehdr">オブジェクトの種類</td><td class="issuehdr">オブジェクト名</td><td class="issuehdr">プロパティ</td><td class="issuehdr">説明</td></tr>
+					<tr><td width="10" class="issuecontent">1</td><td class="issuecontent" nowrap>コンパイル エラー</td><td class="issuecontent">GetPrivateProfileString</td><td class="issuecontent"></td><td class="issuecontent"></td><td class="issuecontent"></td><td class="issuecontent"><a href='ms-help://MS.VSCC.v80/dv_commoner/local/redirect.htm?keyword="FAE78A8D-8978-4FD4-8208-5B7324A8F795"'>パラメータ 'As Any' の宣言はサポートされません。</a></td></tr>
+					<tr><td width="10" class="issuecontent">2</td><td class="issuecontent" nowrap>コンパイル エラー</td><td class="issuecontent">WritePrivateProfileString</td><td class="issuecontent"></td><td class="issuecontent"></td><td class="issuecontent"></td><td class="issuecontent"><a href='ms-help://MS.VSCC.v80/dv_commoner/local/redirect.htm?keyword="FAE78A8D-8978-4FD4-8208-5B7324A8F795"'>パラメータ 'As Any' の宣言はサポートされません。</a></td></tr>
+					<tr><td width="10" class="issuecontent">3</td><td class="issuecontent" nowrap>コンパイル エラー</td><td class="issuecontent">WritePrivateProfileString</td><td class="issuecontent"></td><td class="issuecontent"></td><td class="issuecontent"></td><td class="issuecontent"><a href='ms-help://MS.VSCC.v80/dv_commoner/local/redirect.htm?keyword="FAE78A8D-8978-4FD4-8208-5B7324A8F795"'>パラメータ 'As Any' の宣言はサポートされません。</a></td></tr>
+					<tr><td width="10" class="issuecontent">4</td><td class="issuecontent" nowrap>実行時の警告</td><td class="issuecontent">Class_Initialize</td><td class="issuecontent">App</td><td class="issuecontent">App</td><td class="issuecontent">EXEName</td><td class="issuecontent"><a href='ms-help://MS.VSCC.v80/dv_commoner/local/redirect.htm?keyword="6BA9B8D2-2A32-4B6E-8D36-44949974A5B4"'>App プロパティ App.EXEName には新しい動作が含まれます。</a></td></tr>
+					<tr><td width="10" class="issuecontent">5</td><td class="issuecontent" nowrap>実行時の警告</td><td class="issuecontent">Class_Initialize</td><td class="issuecontent">App</td><td class="issuecontent">App</td><td class="issuecontent">EXEName</td><td class="issuecontent"><a href='ms-help://MS.VSCC.v80/dv_commoner/local/redirect.htm?keyword="6BA9B8D2-2A32-4B6E-8D36-44949974A5B4"'>App プロパティ App.EXEName には新しい動作が含まれます。</a></td></tr>
+					<tr><td width="10" class="issuecontent">6</td><td class="issuecontent" nowrap>実行時の警告</td><td class="issuecontent">Exists</td><td class="issuecontent"></td><td class="issuecontent"></td><td class="issuecontent"></td><td class="issuecontent"><a href='ms-help://MS.VSCC.v80/dv_commoner/local/redirect.htm?keyword="6A50421D-15FE-4896-8A1B-2EC21E9037B2"'>オブジェクト myERROR.Handler の既定プロパティを解決できませんでした。</a></td></tr>
+					<tr><td width="10" class="issuecontent">7</td><td class="issuecontent" nowrap>実行時の警告</td><td class="issuecontent">Exists</td><td class="issuecontent"></td><td class="issuecontent"></td><td class="issuecontent">Dir</td><td class="issuecontent"><a href='ms-help://MS.VSCC.v80/dv_commoner/local/redirect.htm?keyword="9B7D5ADD-D8FE-4819-A36C-6DEDAF088CC7"'>Dir に新しい動作が指定されています。</a></td></tr>
+					<tr><td width="10" class="issuecontent">8</td><td class="issuecontent" nowrap>実行時の警告</td><td class="issuecontent">GetLongPathName</td><td class="issuecontent"></td><td class="issuecontent"></td><td class="issuecontent">Dir</td><td class="issuecontent"><a href='ms-help://MS.VSCC.v80/dv_commoner/local/redirect.htm?keyword="9B7D5ADD-D8FE-4819-A36C-6DEDAF088CC7"'>Dir に新しい動作が指定されています。</a></td></tr>
+					<tr><td width="10" class="issuecontent">9</td><td class="issuecontent" nowrap>実行時の警告</td><td class="issuecontent">GetSectEntriesEx</td><td class="issuecontent"></td><td class="issuecontent"></td><td class="issuecontent"></td><td class="issuecontent"><a href='ms-help://MS.VSCC.v80/dv_commoner/local/redirect.htm?keyword="6A50421D-15FE-4896-8A1B-2EC21E9037B2"'>オブジェクト GetSectionsEntriesEx の既定プロパティを解決できませんでした。</a></td></tr>
+					<tr><td width="10" class="issuecontent">10</td><td class="issuecontent" nowrap>実行時の警告</td><td class="issuecontent">ReplaceToken</td><td class="issuecontent"></td><td class="issuecontent"></td><td class="issuecontent"></td><td class="issuecontent"><a href='ms-help://MS.VSCC.v80/dv_commoner/local/redirect.htm?keyword="6A50421D-15FE-4896-8A1B-2EC21E9037B2"'>オブジェクト NewToken の既定プロパティを解決できませんでした。</a></td></tr>
+					<tr><td width="10" class="issuecontent">11</td><td class="issuecontent" nowrap>実行時の警告</td><td class="issuecontent">Usewinini</td><td class="issuecontent"></td><td class="issuecontent"></td><td class="issuecontent">Right$</td><td class="issuecontent"><a href='ms-help://MS.VSCC.v80/dv_commoner/local/redirect.htm?keyword="6A50421D-15FE-4896-8A1B-2EC21E9037B2"'>オブジェクト mvarFilName の既定プロパティを解決できませんでした。</a></td></tr>
+				</table>
+			</td></tr>
+		<tr class="row">
+			<td class="content"><IMG alt="選択範囲の展開/縮小" class="expandable" height="11"onclick=changepic() src="_UpgradeReport_Files/UpgradeReport_Plus.gif" width="9" child="issue4">&nbsp;clsOra11DBDirect.vb</td>
+			<td class="content">clsOra11DBDirect.cls</td>
+			<td class="content">クラス モジュール</td>
+			<td class="content">
+		アップグレードの問題</td>	<td class="content">4</td>
+			<td class="content">6</td>
+			<td class="content">10</td>
+		</tr>
+			<tr class="collapsed" id="issue4" bgcolor="#ffffff"><td colspan="7">
+				<table width="97%" border="1" bordercolor="#dcdcdc" rules="cols" class="issuetable">
+				<tr><td colspan="7" class="issuetitle">clsOra11DBDirect.cls のアップグレードに関する問題:</td></tr><tr><td width="10" class="issuehdr">#</td><td class="issuehdr" nowrap>重大度レベル</td><td class="issuehdr">場所</td><td class="issuehdr">オブジェクトの種類</td><td class="issuehdr">オブジェクト名</td><td class="issuehdr">プロパティ</td><td class="issuehdr">説明</td></tr>
+					<tr><td width="10" class="issuecontent">1</td><td class="issuecontent" nowrap>コンパイル エラー</td><td class="issuecontent">ConnectDb</td><td class="issuecontent">Screen</td><td class="issuecontent">Screen</td><td class="issuecontent">MousePointer</td><td class="issuecontent"><a href='ms-help://MS.VSCC.v80/dv_commoner/local/redirect.htm?keyword="45116EAB-7060-405E-8ABE-9DBB40DC2E86"'>Screen プロパティ Screen.MousePointer はカスタム マウスポインタをサポートしません。</a></td></tr>
+					<tr><td width="10" class="issuecontent">2</td><td class="issuecontent" nowrap>コンパイル エラー</td><td class="issuecontent">ConnectDb</td><td class="issuecontent">Screen</td><td class="issuecontent">Screen</td><td class="issuecontent">MousePointer</td><td class="issuecontent"><a href='ms-help://MS.VSCC.v80/dv_commoner/local/redirect.htm?keyword="45116EAB-7060-405E-8ABE-9DBB40DC2E86"'>Screen プロパティ Screen.MousePointer はカスタム マウスポインタをサポートしません。</a></td></tr>
+					<tr><td width="10" class="issuecontent">3</td><td class="issuecontent" nowrap>コンパイル エラー</td><td class="issuecontent">ConnectDb</td><td class="issuecontent">Screen</td><td class="issuecontent">Screen</td><td class="issuecontent">vbNormal</td><td class="issuecontent"><a href='ms-help://MS.VSCC.v80/dv_commoner/local/redirect.htm?keyword="B3B44E51-B5F1-4FD7-AA29-CAD31B71F487"'>vbNormal をアップグレードする定数を決定できません。</a></td></tr>
+					<tr><td width="10" class="issuecontent">4</td><td class="issuecontent" nowrap>コンパイル エラー</td><td class="issuecontent">ConnectDb</td><td class="issuecontent">Screen</td><td class="issuecontent">Screen</td><td class="issuecontent">vbNormal</td><td class="issuecontent"><a href='ms-help://MS.VSCC.v80/dv_commoner/local/redirect.htm?keyword="B3B44E51-B5F1-4FD7-AA29-CAD31B71F487"'>vbNormal をアップグレードする定数を決定できません。</a></td></tr>
+					<tr><td width="10" class="issuecontent">5</td><td class="issuecontent" nowrap>実行時の警告</td><td class="issuecontent">ConnectDb</td><td class="issuecontent">Screen</td><td class="issuecontent">Screen</td><td class="issuecontent">MousePointer</td><td class="issuecontent"><a href='ms-help://MS.VSCC.v80/dv_commoner/local/redirect.htm?keyword="6BA9B8D2-2A32-4B6E-8D36-44949974A5B4"'>Screen プロパティ Screen.MousePointer には新しい動作が含まれます。</a></td></tr>
+					<tr><td width="10" class="issuecontent">6</td><td class="issuecontent" nowrap>実行時の警告</td><td class="issuecontent">ConnectDb</td><td class="issuecontent">Screen</td><td class="issuecontent">Screen</td><td class="issuecontent">MousePointer</td><td class="issuecontent"><a href='ms-help://MS.VSCC.v80/dv_commoner/local/redirect.htm?keyword="6BA9B8D2-2A32-4B6E-8D36-44949974A5B4"'>Screen プロパティ Screen.MousePointer には新しい動作が含まれます。</a></td></tr>
+					<tr><td width="10" class="issuecontent">7</td><td class="issuecontent" nowrap>実行時の警告</td><td class="issuecontent">ConnectDb</td><td class="issuecontent">Screen</td><td class="issuecontent">Screen</td><td class="issuecontent">MousePointer</td><td class="issuecontent"><a href='ms-help://MS.VSCC.v80/dv_commoner/local/redirect.htm?keyword="6BA9B8D2-2A32-4B6E-8D36-44949974A5B4"'>Screen プロパティ Screen.MousePointer には新しい動作が含まれます。</a></td></tr>
+					<tr><td width="10" class="issuecontent">8</td><td class="issuecontent" nowrap>実行時の警告</td><td class="issuecontent">GetNextPKey</td><td class="issuecontent"></td><td class="issuecontent"></td><td class="issuecontent"></td><td class="issuecontent"><a href='ms-help://MS.VSCC.v80/dv_commoner/local/redirect.htm?keyword="6A50421D-15FE-4896-8A1B-2EC21E9037B2"'>オブジェクト rDataset.Fields の既定プロパティを解決できませんでした。</a></td></tr>
+					<tr><td width="10" class="issuecontent">9</td><td class="issuecontent" nowrap>実行時の警告</td><td class="issuecontent">GetNextPKey</td><td class="issuecontent"></td><td class="issuecontent"></td><td class="issuecontent">IsNull</td><td class="issuecontent"><a href='ms-help://MS.VSCC.v80/dv_commoner/local/redirect.htm?keyword="2EED02CB-5C0E-4DC1-AE94-4FAA3A30F51A"'>Null/IsNull() の使用が見つかりました。</a></td></tr>
+					<tr><td width="10" class="issuecontent">10</td><td class="issuecontent" nowrap>実行時の警告</td><td class="issuecontent">GetNextPKey</td><td class="issuecontent"></td><td class="issuecontent"></td><td class="issuecontent">IsNull</td><td class="issuecontent"><a href='ms-help://MS.VSCC.v80/dv_commoner/local/redirect.htm?keyword="6A50421D-15FE-4896-8A1B-2EC21E9037B2"'>オブジェクト rDataset.Fields の既定プロパティを解決できませんでした。</a></td></tr>
+				</table>
+			</td></tr>
+		<tr class="row">
+			<td class="content"><IMG alt="選択範囲の展開/縮小" class="expandable" height="11"onclick=changepic() src="_UpgradeReport_Files/UpgradeReport_Plus.gif" width="9" child="issue5">&nbsp;clsTDMaterialRpt.vb</td>
+			<td class="content">clsTDMaterialRpt.cls</td>
+			<td class="content">クラス モジュール</td>
+			<td class="content">
+		アップグレード済み</td>	<td class="content">0</td>
+			<td class="content">0</td>
+			<td class="content">0</td>
+		</tr>
+			<tr class="collapsed" id="issue5" bgcolor="#ffffff"><td colspan="7">
+				<table width="97%" border="1" bordercolor="#dcdcdc" rules="cols" class="issuetable">
+				<tr><td colspan="7" class="issuetitle">clsTDMaterialRpt.cls のアップグレードに関する問題:</td></tr><tr><td class="issuenone">なし</td></tr>
+				</table>
+			</td></tr>
+		<tr class="row">
+			<td class="content"><IMG alt="選択範囲の展開/縮小" class="expandable" height="11"onclick=changepic() src="_UpgradeReport_Files/UpgradeReport_Plus.gif" width="9" child="issue6">&nbsp;clsTDMaterialRpts.vb</td>
+			<td class="content">clsTDMaterialRpts.cls</td>
+			<td class="content">クラス モジュール</td>
+			<td class="content">
+		アップグレード済み</td>	<td class="content">0</td>
+			<td class="content">0</td>
+			<td class="content">0</td>
+		</tr>
+			<tr class="collapsed" id="issue6" bgcolor="#ffffff"><td colspan="7">
+				<table width="97%" border="1" bordercolor="#dcdcdc" rules="cols" class="issuetable">
+				<tr><td colspan="7" class="issuetitle">clsTDMaterialRpts.cls のアップグレードに関する問題:</td></tr><tr><td class="issuenone">なし</td></tr>
+				</table>
+			</td></tr>
+		<tr class="row">
+			<td class="content"><IMG alt="選択範囲の展開/縮小" class="expandable" height="11"onclick=changepic() src="_UpgradeReport_Files/UpgradeReport_Plus.gif" width="9" child="issue7">&nbsp;frmRegistration.vb</td>
+			<td class="content">frmRegistration.frm</td>
+			<td class="content">フォーム</td>
+			<td class="content">
+		アップグレードの問題</td>	<td class="content">0</td>
+			<td class="content">1</td>
+			<td class="content">1</td>
+		</tr>
+			<tr class="collapsed" id="issue7" bgcolor="#ffffff"><td colspan="7">
+				<table width="97%" border="1" bordercolor="#dcdcdc" rules="cols" class="issuetable">
+				<tr><td colspan="7" class="issuetitle">frmRegistration.frm のアップグレードに関する問題:</td></tr><tr><td width="10" class="issuehdr">#</td><td class="issuehdr" nowrap>重大度レベル</td><td class="issuehdr">場所</td><td class="issuehdr">オブジェクトの種類</td><td class="issuehdr">オブジェクト名</td><td class="issuehdr">プロパティ</td><td class="issuehdr">説明</td></tr>
+					<tr><td width="10" class="issuecontent">1</td><td class="issuecontent" nowrap>実行時の警告</td><td class="issuecontent">PrintTdMaterialReport</td><td class="issuecontent"></td><td class="issuecontent"></td><td class="issuecontent"></td><td class="issuecontent"><a href='ms-help://MS.VSCC.v80/dv_commoner/local/redirect.htm?keyword="6A50421D-15FE-4896-8A1B-2EC21E9037B2"'>オブジェクト rptTD_Material.Show の既定プロパティを解決できませんでした。</a></td></tr>
+				</table>
+			</td></tr>
+		<tr class="row">
+			<td class="content"><IMG alt="選択範囲の展開/縮小" class="expandable" height="11"onclick=changepic() src="_UpgradeReport_Files/UpgradeReport_Plus.gif" width="9" child="issue8">&nbsp;modMain.vb</td>
+			<td class="content">modMain.bas</td>
+			<td class="content">モジュール</td>
+			<td class="content">
+		アップグレードの問題</td>	<td class="content">0</td>
+			<td class="content">1</td>
+			<td class="content">1</td>
+		</tr>
+			<tr class="collapsed" id="issue8" bgcolor="#ffffff"><td colspan="7">
+				<table width="97%" border="1" bordercolor="#dcdcdc" rules="cols" class="issuetable">
+				<tr><td colspan="7" class="issuetitle">modMain.bas のアップグレードに関する問題:</td></tr><tr><td width="10" class="issuehdr">#</td><td class="issuehdr" nowrap>重大度レベル</td><td class="issuehdr">場所</td><td class="issuehdr">オブジェクトの種類</td><td class="issuehdr">オブジェクト名</td><td class="issuehdr">プロパティ</td><td class="issuehdr">説明</td></tr>
+					<tr><td width="10" class="issuecontent">1</td><td class="issuecontent" nowrap>実行時の警告</td><td class="issuecontent">(Declarations)</td><td class="issuecontent"></td><td class="issuecontent"></td><td class="issuecontent"></td><td class="issuecontent"><a href='ms-help://MS.VSCC.v80/dv_commoner/local/redirect.htm?keyword="E08DDC71-66BA-424F-A612-80AF11498FF8"'>Sub Main() が完了したときにアプリケーションは終了します。</a></td></tr>
+				</table>
+			</td></tr>
+		<tr class="row">
+			<td class="content"><IMG alt="選択範囲の展開/縮小" class="expandable" height="11"onclick=changepic() src="_UpgradeReport_Files/UpgradeReport_Plus.gif" width="9" child="issue9">&nbsp;RPTTD_MATERIAL.dsr</td>
+			<td class="content">rptTd_Material.Dsr</td>
+			<td class="content">ActiveX デザイナ</td>
+			<td class="content">
+		未アップグレード</td>	<td class="content">0</td>
+			<td class="content">0</td>
+			<td class="content">0</td>
+		</tr>
+			<tr class="collapsed" id="issue9" bgcolor="#ffffff"><td colspan="7">
+				<table width="97%" border="1" bordercolor="#dcdcdc" rules="cols" class="issuetable">
+				<tr><td colspan="7" class="issuetitle">rptTd_Material.Dsr のアップグレードに関する問題:</td></tr><tr><td class="issuenone">なし</td></tr>
+				</table>
+			</td></tr>
+		<tr valign="top">
+			<td class="foot">9 ファイル</td>
+			<td class="foot">&nbsp;</td>
+			<td class="foot">フォーム: 1<br>ActiveX デザイナ: 1<br>クラス モジュール: 6<br>モジュール: 1</td>
+			<td class="foot">
+		アップグレード済み: 8<BR>
+		未アップグレード: 1
+		</td>
+			<td class="foot">11</td>
+			<td class="foot">22</td>
+			<td class="foot">33</td>
+		</tr>
+		</table>
+		</span>
+		<p class="help">
+			<A href='ms-help://MS.VSCC.v80/dv_commoner/local/redirect.htm?keyword="a16bd8ca-916d-4cd3-821c-417999d3cb97"'>アップグレードされたプロジェクトに関するトラブルシューティングについてはここをクリックしてください。</A>
+		</p>
+				<p>
+					<table class = "note">
+						<tr><td nowrap><b>アップグレードの設定</b></td></tr>
+						<tr><td nowrap><b>ログ ファイル:</b> TD_Acceptance.log</td></tr>
+						<tr><td nowrap><b>プロジェクトの移行先:</b> WinExe</td></tr>
+						<tr><td nowrap><b>出力ディレクトリ:</b> D:\VB6\pgsql-TD_Acceptance_V10_mdb\Project1.NET2</td></tr>
+						<tr><td nowrap><b>出力名:</b> TD_Acceptance.vbproj</td></tr>
+						<tr><td nowrap><b>プロジェクト名:</b> TD_Acceptance</td></tr>
+						<tr><td nowrap><b>プロジェクト パス:</b> D:\VB6\pgsql-TD_Acceptance_V10_mdb\TD_Acceptance.vbp</td></tr>
+					</table>
+				</p>
+	</body>
+</html>
