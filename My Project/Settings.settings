@@ -2,9 +2,6 @@
 <SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="My" GeneratedClassName="MySettings" UseMySettingsClassName="true">
   <Profiles />
   <Settings>
-    <Setting Name="MDB_File_PATH" Type="System.String" Scope="User">
-      <Value Profile="(Default)">C:\MyDevelopment\VB.net\TD_Helmock_VB.NET_MDB\td_v10.mdb</Value>
-    </Setting>
     <Setting Name="BagLabelLayoutFile" Type="System.String" Scope="User">
       <Value Profile="(Default)">\\140.81.58.14\public_share\system\CartonBoxLabel_mr400e_MLv4.mllay</Value>
     </Setting>
@@ -53,9 +50,6 @@
     <Setting Name="MIS_CustomerId" Type="System.String" Scope="User">
       <Value Profile="(Default)">KOM</Value>
     </Setting>
-    <Setting Name="RPT_MDB_File_Path" Type="System.String" Scope="User">
-      <Value Profile="(Default)">C:\MyDevelopment\VB.net\TD_Helmock_VB.NET_MDB\mis_rpt_tbl.mdb</Value>
-    </Setting>
     <Setting Name="DB_DbName" Type="System.String" Scope="User">
       <Value Profile="(Default)">TD</Value>
     </Setting>
@@ -77,8 +71,14 @@
     <Setting Name="OtherDefect" Type="System.String" Scope="User">
       <Value Profile="(Default)" />
     </Setting>
+    <Setting Name="MDB_File_PATH" Type="System.String" Scope="User">
+      <Value Profile="(Default)">C:\Prasad\Mywork\Arya Global Projects\VB.NET\TD_Helmock_VB.NET_MDB\td_v10.mdb</Value>
+    </Setting>
+    <Setting Name="RPT_MDB_File_Path" Type="System.String" Scope="User">
+      <Value Profile="(Default)">C:\Prasad\Mywork\Arya Global Projects\VB.NET\TD_Helmock_VB.NET_MDB\mis_rpt_tbl_v10.mdb</Value>
+    </Setting>
     <Setting Name="TdMaterialReportFilePath" Type="System.String" Scope="User">
-      <Value Profile="(Default)">C:\MyDevelopment\VB.net\TD_Helmock_VB.NET_MDB\TD_Acceptance_V10_mdb.NET\ReportTD_Material.rdlx</Value>
+      <Value Profile="(Default)">C:\Prasad\Mywork\Arya Global Projects\VB.NET\TD_Helmock_VB.NET_MDB\TD_Acceptance_V10_mdb.NET\ReportTD_Material.rdlx</Value>
     </Setting>
   </Settings>
 </SettingsFile>

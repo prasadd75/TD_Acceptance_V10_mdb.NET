@@ -56,18 +56,6 @@ Namespace My
         
         <Global.System.Configuration.UserScopedSettingAttribute(),  _
          Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
-         Global.System.Configuration.DefaultSettingValueAttribute("C:\MyDevelopment\VB.net\TD_Helmock_VB.NET_MDB\td_v10.mdb")>  _
-        Public Property MDB_File_PATH() As String
-            Get
-                Return CType(Me("MDB_File_PATH"),String)
-            End Get
-            Set
-                Me("MDB_File_PATH") = value
-            End Set
-        End Property
-        
-        <Global.System.Configuration.UserScopedSettingAttribute(),  _
-         Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
          Global.System.Configuration.DefaultSettingValueAttribute("\\140.81.58.14\public_share\system\CartonBoxLabel_mr400e_MLv4.mllay")>  _
         Public Property BagLabelLayoutFile() As String
             Get
@@ -260,18 +248,6 @@ Namespace My
         
         <Global.System.Configuration.UserScopedSettingAttribute(),  _
          Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
-         Global.System.Configuration.DefaultSettingValueAttribute("C:\MyDevelopment\VB.net\TD_Helmock_VB.NET_MDB\mis_rpt_tbl.mdb")>  _
-        Public Property RPT_MDB_File_Path() As String
-            Get
-                Return CType(Me("RPT_MDB_File_Path"),String)
-            End Get
-            Set
-                Me("RPT_MDB_File_Path") = value
-            End Set
-        End Property
-        
-        <Global.System.Configuration.UserScopedSettingAttribute(),  _
-         Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
          Global.System.Configuration.DefaultSettingValueAttribute("TD")>  _
         Public Property DB_DbName() As String
             Get
@@ -356,8 +332,33 @@ Namespace My
         
         <Global.System.Configuration.UserScopedSettingAttribute(),  _
          Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
-         Global.System.Configuration.DefaultSettingValueAttribute("C:\MyDevelopment\VB.net\TD_Helmock_VB.NET_MDB\TD_Acceptance_V10_mdb.NET\ReportTD_"& _ 
-            "Material.rdlx")>  _
+         Global.System.Configuration.DefaultSettingValueAttribute("C:\Prasad\Mywork\Arya Global Projects\VB.NET\TD_Helmock_VB.NET_MDB\td_v10.mdb")>  _
+        Public Property MDB_File_PATH() As String
+            Get
+                Return CType(Me("MDB_File_PATH"),String)
+            End Get
+            Set
+                Me("MDB_File_PATH") = value
+            End Set
+        End Property
+
+        <Global.System.Configuration.UserScopedSettingAttribute(),
+         Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),
+         Global.System.Configuration.DefaultSettingValueAttribute("C:\Prasad\Mywork\Arya Global Projects\VB.NET\TD_Helmock_VB.NET_MDB\mis_rpt_tbl_v1" &
+            "0.mdb")>
+        Public Property RPT_MDB_File_Path() As String
+            Get
+                Return CType(Me("RPT_MDB_File_Path"), String)
+            End Get
+            Set
+                Me("RPT_MDB_File_Path") = Value
+            End Set
+        End Property
+
+        <Global.System.Configuration.UserScopedSettingAttribute(),  _
+         Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.Configuration.DefaultSettingValueAttribute("C:\Prasad\Mywork\Arya Global Projects\VB.NET\TD_Helmock_VB.NET_MDB\TD_Acceptance_"& _ 
+            "V10_mdb.NET\ReportTD_Material.rdlx")>  _
         Public Property TdMaterialReportFilePath() As String
             Get
                 Return CType(Me("TdMaterialReportFilePath"),String)
