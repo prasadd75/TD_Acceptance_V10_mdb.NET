@@ -40,10 +40,12 @@ Module modMain
 	
 	Public gsDbName As String
 	Public gsUsername As String
-	Public gsPassword As String
-	
-	'UPGRADE_WARNING: Sub Main() が完了したときにアプリケーションは終了します。 詳細については、'ms-help://MS.VSCC.v80/dv_commoner/local/redirect.htm?keyword="E08DDC71-66BA-424F-A612-80AF11498FF8"' をクリックしてください。
-	Public Sub Main()
+    Public gsPassword As String
+
+    Private oOracleReader As New clsOracleReader
+
+    'UPGRADE_WARNING: Sub Main() が完了したときにアプリケーションは終了します。 詳細については、'ms-help://MS.VSCC.v80/dv_commoner/local/redirect.htm?keyword="E08DDC71-66BA-424F-A612-80AF11498FF8"' をクリックしてください。
+    Public Sub Main()
 
         'Dim oIniFile As clsIniFile
 
@@ -439,17 +441,19 @@ Module modMain
 		Dim sLastBatchSeqId_Seq As String
 		Dim sRecordtime As String
 		Dim sProduct As String
-		
-		'-----------------------------------------------------------------
-		'Initialize clsOra11DBDirect
-		
-		'Set dbDirect = New clsOra11DBDirect
-		
-		dbDirect = New clsDBDirect
-		
-		'/////////////////////////////////////////////////////////////////
-		
-		rsDirect = New ADODB.Recordset
+
+        '-----------------------------------------------------------------
+        'Initialize clsOra11DBDirect
+
+        'Set dbDirect = New clsOra11DBDirect
+
+        dbDirect = New clsDBDirect
+
+        'oOracleReader.ConnectTo("Data Source=XE;User Id=TD_V10;Password=oracle123")
+
+        '/////////////////////////////////////////////////////////////////
+
+        rsDirect = New ADODB.Recordset
 		
 		sSql = "SELECT * FROM TD_BATCH_SEQ_CTRL_TBL WHERE BatchId = '" & sRecLotId & "';"
 		'sSql = "SELECT * FROM BATCH_SEQ_CTRL_TBL WHERE reclotid = '" & sRecLotId & "'"

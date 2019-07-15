@@ -110,12 +110,14 @@
     <Reference Include="msdatasrc, Version=7.0.3300.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
       <EmbedInteropTypes>True</EmbedInteropTypes>
     </Reference>
+    <Reference Include="Oracle.DataAccess, Version=4.112.2.0, Culture=neutral, PublicKeyToken=89b483f429c47342, processorArchitecture=AMD64" />
     <Reference Include="System">
       <Name>System</Name>
     </Reference>
     <Reference Include="System.Data">
       <Name>System.Data</Name>
     </Reference>
+    <Reference Include="System.Data.OracleClient" />
     <Reference Include="System.Drawing">
       <Name>System.Drawing</Name>
     </Reference>
@@ -161,6 +163,7 @@
     <Compile Include="clsOra11DBDirect.vb">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Include="clsOracleReader.vb" />
     <Compile Include="clsTDMaterialRpt.vb">
       <SubType>Code</SubType>
     </Compile>
